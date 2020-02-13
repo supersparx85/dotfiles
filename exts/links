@@ -1,0 +1,34 @@
+#!/bin/sh
+#sudo pacman -S dunst neovim vifm maim xorg-xinit fzf numlockx cmus pamixer --noconfirm
+mkdir -p ~/.config/vifm/colors
+mkdir -p ~/.config/mpd
+mkdir -p ~/.config/bspwm
+mkdir -p ~/.config/sxhkd
+mkdir -p ~/.config/polybar
+mkdir -p ~/.config/mpv
+mkdir -p ~/.config/dunst
+mkdir -p ~/.config/nvim
+mkdir -p ~/.config/sxiv/exec
+mkdir -p ~/.config/vifm
+mkdir -p ~/.ncmpcpp
+mkdir -p ~/.config/zathura
+
+ln -s ~/Documents/dotfiles/files/ncmpcpp ~/.ncmpcpp/config
+ln -s ~/Documents/dotfiles/files/dunstrc ~/.config/dunst/dunstrc
+ln -s ~/Documents/dotfiles/files/mpd.conf ~/.config/mpd/mpd.conf
+ln -s ~/Documents/dotfiles/files/mpv.conf ~/.config/mpv/mpv.conf
+ln -s ~/Documents/dotfiles/files/init.vim ~/.config/nvim/init.vim
+ln -s ~/Documents/dotfiles/files/bspwmrc ~/.config/bspwm/bspwmrc
+ln -s ~/Documents/dotfiles/files/sxhkdrc ~/.config/sxhkd/sxhkdrc
+ln -s ~/Documents/dotfiles/files/polybarrc ~/.config/polybar/config
+ln -s ~/Documents/dotfiles/files/zathurarc ~/.config/zathura/zathurarc
+ln -s ~/Documents/dotfiles/files/sxiv.conf ~/.config/sxiv/exec/key-handler
+ln -s ~/Documents/dotfiles/files/vifmrc ~/.config/vifm/vifmrc
+ln -s ~/Documents/dotfiles/files/Default.vifm ~/.config/vifm/colors/Default.vifm
+
+ln -s ~/Documents/dotfiles/exts ~
+ln -s ~/Documents/dotfiles/files/.Xresources ~
+ln -s ~/Documents/dotfiles/files/.xinitrc ~
+ln -s ~/Documents/dotfiles/files/.profile ~
+ln -s ~/Documents/dotfiles/files/.profile ~/.bash_profile
+ln -s ~/Documents/dotfiles/files/.bashrc ~

@@ -1,0 +1,8 @@
+#!/bin/sh
+case "$(printf "Lock\nLogout\nReboot\nPoweroff\nExit" | dmenu  -i -l 10)" in
+	"Lock") amixer set Master mute;slock &;;
+	"Logout") killall xinit &;;
+	"Reboot") systemctl reboot &;;
+	"Poweroff") systemctl poweroff &;;
+	"Exit") exit 0 &;;
+esac

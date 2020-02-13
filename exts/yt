@@ -1,0 +1,9 @@
+#!/bin/sh
+url="$(xclip -o)"
+cd ~/Downloads/ || exit
+case "$(printf "Download audio\nDownload video\nDownload thumbnail\nOpen it with mpv" | dmenu -b -i -l 10)" in
+		"Download audio") notify-send "downloading audio" && youtube-dl -x -f bestaudio --audio-format vorbis -o '$HOME/Downloads/Music/%(title)s.%(ext)s' "$url" && dunstify "File has been Downloaded!" -r 250 &;;
+		"Download video") notify-send "downloading video" &&  youtube-dl -f best -o '$HOME/Downloads/Videos/%(title)s.%(ext)s' "$url" && dunstify "File has been Downloaded!" -r 250 &;;
+		"Download thumbnail") notify-send "downloading thumbnail" && youtube-dl --write-thumbnail --skip-download -o '$HOME/Downloads/Pictures/%(title)s.%(ext)s'} "$url" && dunstify "File has been Downloaded!" -r 250 &;;
+		"Open it with mpv") notify-send "Open it with mpv" && mpv "$url" &;;
+esac

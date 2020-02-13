@@ -1,0 +1,6 @@
+#!/bin/sh
+case "$1" in
+		"up") amixer set Master 3+ ;;
+		"down") amixer set Master 3-;;
+		"toggle") amixer set Master toggle;;
+esac
