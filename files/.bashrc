@@ -85,7 +85,7 @@ function maid(){
 		sudo pacman -Syu --overwrite='*'
 		echo " Checking for updated packages" && yay
 		echo " Checking for pip updates and installing them " && sudo pip install --upgrade pip
-		sudo pip list --outdated | awk 'NR >2 { print $1}' | xargs sudo pip install --upgrade -
+		sudo pip list --outdated | awk 'NR >2 { print $1}' | xargs -I {} sudo pip install --upgrade "{}"
 		echo " Looking for unnecessary packages" && sudo pacman -Rsn $(pacman -Qtdq)
 		echo " Cleaning cache and history" && sudo pacman -Sc --noconfirm >/dev/null 2>&1
 		trash-put ~/.zsh_history >/dev/null 2>&1
