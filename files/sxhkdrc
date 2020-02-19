@@ -2,13 +2,14 @@
 alt {_,shift + } Return
 		{st,st -c CenterTerminal}
 
-alt + o ; {w,p,f,q,t,v,c}
-		{firefox,pcmanfm ~,filezilla,Qbitorrent,telegram-desktop,st -e vifm ~,galculator}&
+alt + o ; {w,p,f,q,t,v}
+		{firefox,pcmanfm ~,filezilla,Qbitorrent,telegram-desktop,st -e vifm ~}&
 
 alt + s ; {q,a}
 		{qjackctl, ardour5}
-alt + d
-		dmenu_run -i -l 5
+
+alt + {d,p,k}
+		rofi -show {run,windowcd,calc}
 
 alt {_,shift+ } + l
 		{scrot, scrot -s} ~/documents/file.jpg
