@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1582321448656,
+  "timeStamp": 1582321817555,
   "version": "1.24.4",
   "userSettings": {
     "advancedUserEnabled": true,
@@ -10,7 +10,7 @@
     "colorBlindFriendly": false,
     "contextMenuEnabled": true,
     "dynamicFilteringEnabled": true,
-    "externalLists": "https://easylist-downloads.adblockplus.org/easylistportuguese.txt\nhttps://filters.adtidy.org/extension/ublock/filters/1.txt\nhttps://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Brazil.txt\nhttps://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt",
+    "externalLists": "https://easylist-downloads.adblockplus.org/easylistportuguese.txt\nhttps://filters.adtidy.org/extension/ublock/filters/1.txt\nhttps://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Brazil.txt\nhttps://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt\nhttps://secure.fanboy.co.nz/r/fanboy-complete.txt\nhttps://secure.fanboy.co.nz/r/fanboy-ultimate.txt",
     "firewallPaneMinimized": true,
     "hyperlinkAuditingDisabled": true,
     "ignoreGenericCosmeticFilters": false,
@@ -56,6 +56,8 @@
     "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Brazil.txt",
     "https://filters.adtidy.org/extension/ublock/filters/1.txt",
     "https://easylist-downloads.adblockplus.org/easylistportuguese.txt",
+    "https://secure.fanboy.co.nz/r/fanboy-complete.txt",
+    "https://secure.fanboy.co.nz/r/fanboy-ultimate.txt",
     "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
   ],
   "hiddenSettings": {
@@ -89,20 +91,11 @@
   },
   "whitelist": [
     "about-scheme",
-    "cadastropositivo.spcbrasil.org.br",
     "chrome-extension-scheme",
     "chrome-scheme",
-    "freemidi.org",
-    "moz-extension-scheme",
-    "opera-scheme",
-    "vivaldi-scheme",
-    "www.achecep.com.br",
-    "www.extension.harvard.edu",
-    "www.lendico.com.br",
-    "www.washingtonpost.com",
-    "wyciwyg-scheme"
+    "moz-extension-scheme"
   ],
-  "netWhitelist": "about-scheme\ncadastropositivo.spcbrasil.org.br\nchrome-extension-scheme\nchrome-scheme\nfreemidi.org\nmoz-extension-scheme\nopera-scheme\nvivaldi-scheme\nwww.achecep.com.br\nwww.extension.harvard.edu\nwww.lendico.com.br\nwww.washingtonpost.com\nwyciwyg-scheme",
+  "netWhitelist": "about-scheme\nchrome-extension-scheme\nchrome-scheme\nmoz-extension-scheme",
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
