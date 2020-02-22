@@ -1,4 +1,5 @@
 #!/bin/sh
+text="$(xclip -o)"
 Symbols="
 ai | #FF1601
 ei | #13B2B2
@@ -16,5 +17,8 @@ aw | #030DD7
 Ʊ  | #C29260
 ‘ə | #61B501
 "
-echo "$Symbols" | dmenu -i -l 10 | awk '{print $3}' | tr -d '\n' | xclip -selection clipboard
+#color=
+echo "<span style='color:$(echo "$Symbols" | dmenu -i -l 10 | awk '{print $3}' | tr -d '\n')'>$text</span>" | xclip -selection clipboard
 notify-send "$(xclip -o -selection clipboard) copied to clipboard"
+nice
+
