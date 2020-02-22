@@ -1,5 +1,5 @@
 #!/bin/sh
-text="$(xsel | tr -d '\n')"
+text="$(xclip -o)"
 Symbols="
 ai | #FF1601
 ei | #13B2B2
@@ -15,9 +15,9 @@ uw | #9F9DC5
 aw | #030DD7
 ɔɪ | blank
 Ʊ  | #C29260
-‘ə | #61B501
+'uh | #61B501
 "
 #color=
-echo "<span style='color:$(echo "$Symbols" | dmenu -i -l 10 | awk '{print $3}' | tr -d '\n')'>$text</span>" | tr -d '\n' | xargs -r -I {} xdotool type "{}"
-#notify-send "$(xclip -o -selection clipboard) copied to clipboard"
+echo "<span style='color:$(echo "$Symbols" | dmenu -i -l 10 | awk '{print $3}' | tr -d '\n')'>$text</span>" | tr -d '\n' | xclip -selection clipboard
+notify-send "$(xclip -o -selection clipboard) copied to clipboard"
 
