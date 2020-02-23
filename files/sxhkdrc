@@ -15,8 +15,8 @@ alt + l
 alt {_,shift+ } + l
 		{scrot, scrot -s} ~/documents/file.jpg
 
-shift + {k,p}
-		~/Documents/dotfiles/exts/{color,under}
+shift + {k,p,e}
+		~/Documents/dotfiles/exts/{color,under,emojis}
 alt + shift {e,w,n}
 		~/Documents/dotfiles/exts/{dmn_power,words,symbols} &
 
