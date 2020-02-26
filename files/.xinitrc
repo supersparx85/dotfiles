@@ -12,4 +12,5 @@ feh --bg-fill ~/.config/wall.jpg &
 polybar -r bar &
 sxhkd &
 qjackctl &
+megasync &
 bspwm
