@@ -12,7 +12,6 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 alias ls="ls -a --color=auto --group-directories-first"
 alias grep='grep --color=auto'
-alias feh="feh --scale-down --auto-zoom"
 alias h="cdf ~"
 alias mkdir="mkdir -p"
 alias sdl="shred -vfzu -n 24"
@@ -28,14 +27,9 @@ alias hisc="history -c"
 alias unlock="git config credential.helper store"
 alias def="find . -type d -empty -print -delete"
 alias rml="sudo reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu"
-alias cop="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean"
 alias nowallpaper="xsetroot -solid '#282828'"
-alias ups="sudo pacman -Syu --overwrite='*'"
+alias pm="sudo pacman -Syu --overwrite='*'"
 alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
-
-function mem(){
-		free -h | awk '/Mem/ {print "Mem:" $3 "/" $2}'
-}
 
 function ga(){
 		cd ~/Documents/dotfiles/
@@ -76,7 +70,5 @@ function maid(){
 		sudo pip list --outdated | awk 'NR >2 { print $1}' | xargs -I {} sudo pip install --upgrade "{}"
 		echo " Looking for unnecessary packages" && sudo pacman -Rsn $(pacman -Qtdq)
 		echo " Cleaning cache and history" && sudo pacman -Sc --noconfirm >/dev/null 2>&1
-		trash-put ~/.zsh_history >/dev/null 2>&1
 		echo "$(find ~ -type d -empty -print -delete | wc -l) empty directories have been deleted."
-		echo " Taking the trash out" && trash-empty
 }
