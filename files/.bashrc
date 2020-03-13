@@ -23,6 +23,7 @@ alias gp="git push origin master"
 alias c='cdf "$(fd --type d . /home/dgu | fzf)"'
 alias ddf='fdupes . -rdN'
 alias gm='git add . && git commit -m '
+alias cop="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean"
 alias hisc="history -c"
 alias unlock="git config credential.helper store"
 alias def="find . -type d -empty -print -delete"
