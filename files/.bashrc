@@ -29,7 +29,6 @@ alias unlock="git config credential.helper store"
 alias def="find . -type d -empty -print -delete"
 alias rml="sudo reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu"
 alias cop="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean"
-alias dfsn="find . -name '*([0-9]).*' -exec rm {} -v \;"
 alias nowallpaper="xsetroot -solid '#282828'"
 alias ups="sudo pacman -Syu --overwrite='*'"
 alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
@@ -50,6 +49,7 @@ function vf(){
 function cdf(){
 		builtin cd "$1"; ls --color=auto --group-directories-first;
 }
+
 function cleanlinks(){
 	find . -type l -xtype l | xargs -r -I {} rm "{}"
 }
