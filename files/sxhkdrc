@@ -2,7 +2,7 @@
 alt {_,shift + } Return
 		{st,st -c CenterTerminal}
 
-alt + o ; {w,p,f,q,t,v,n}
+alt + o ; {w,p,t,v,n}
 		{firefox,pcmanfm ~,telegram-desktop,st -e vifm ~,nitrogen}&
 alt + d
 		dmenu_run -i -l 5
@@ -15,7 +15,7 @@ alt +shift + s
 alt + shift {e,w}
 		~/Documents/dotfiles/exts/{dmn_power,words} &
 
-alt + {g,y,n}
+alt + {g,y}
 		~/Documents/dotfiles/exts/{class,yt}
 
 shift {u,d,m}
