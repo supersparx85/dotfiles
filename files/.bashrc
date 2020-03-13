@@ -32,15 +32,10 @@ alias cop="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean"
 alias dfsn="find . -name '*([0-9]).*' -exec rm {} -v \;"
 alias nowallpaper="xsetroot -solid '#282828'"
 alias ups="sudo pacman -Syu --overwrite='*'"
-alias wall="feh --bg-fill"
 alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
 
 function mem(){
 		free -h | awk '/Mem/ {print "Mem:" $3 "/" $2}'
-}
-
-function w(){
-		vifm "$(pwd)"
 }
 
 function ga(){
@@ -59,10 +54,6 @@ function cleanlinks(){
 	find . -type l -xtype l | xargs -r -I {} rm "{}"
 }
 
-function ctrash(){
-			trash-put ~/.local/share/vifm/Trash >/dev/null 2>&1;trash-empty >/dev/null 2>&1
-		    echo "The trash has been thrown out"
-	}
 function ees(){
 	find ~/Documents/dotfiles/exts -type f |fzf --preview 'head -50 {}' | xargs -r nvim
 }
@@ -71,9 +62,6 @@ function ee(){
 	find ~/Documents/dotfiles -type f | grep -v ".git\|.exts\|.png\|Makefile\|util.h\|LICENSE\|.mk\|.1\|.info\|util.c" | fzf --preview 'head -50 {}' | xargs -r -I {} nvim "{}"
 }
 
-function setwallpaper(){
-		convert "$1" ~/.config/wall.jpg && feh --bg-fill ~/.config/wall.jpg
-}
 function cleangit(){
 	git checkout --orphan temp_branch;git add -A; git commit -am "Commit history deleted"; git branch -D master; git branch -m master; git push -f origin master
 }

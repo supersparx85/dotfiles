@@ -2,7 +2,7 @@
 alt {_,shift + } Return
 		{st,st -c CenterTerminal}
 
-alt + o ; {w,p,f,q,t,v,o}
+alt + o ; {w,p,f,q,t,v,n}
 		{firefox,pcmanfm ~,filezilla,Qbitorrent,telegram-desktop,st -e vifm ~,nitrogen}&
 
 alt + s ; {q,a}
