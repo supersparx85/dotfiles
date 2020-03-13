@@ -2,19 +2,14 @@
 alt {_,shift + } Return
 		{st,st -c CenterTerminal}
 
-alt + o ; {w,p,f,q,t,v}
-		{firefox,pcmanfm ~,filezilla,Qbitorrent,telegram-desktop,st -e vifm ~}&
+alt + o ; {w,p,f,q,t,v,o}
+		{firefox,pcmanfm ~,filezilla,Qbitorrent,telegram-desktop,st -e vifm ~,nitrogen}&
 
 alt + s ; {q,a}
 		{qjackctl, ardour5}
-
 alt + d
 		dmenu_run -i -l 5
 
-alt + l
-		"$TERMINAL" -e "vf"
-alt + {p,k}
-		rofi -show {windowcd,calc}
 alt + l
 		pkill mpv; pkill sxiv; pkill feh
 alt {_,shift+ } + l
