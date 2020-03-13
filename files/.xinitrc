@@ -8,9 +8,8 @@ setxkbmap -layout br &
 xsetroot -cursor_name arrow &
 numlockx on &
 nitrogen --restore &
-#feh --bg-fill ~/.config/wall.jpg &
 polybar -r bar &
 sxhkd &
 qjackctl &
-#megasync &
+megasync &
 bspwm
