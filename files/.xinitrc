@@ -8,7 +8,6 @@ setxkbmap -layout br &
 xsetroot -cursor_name arrow &
 numlockx on &
 feh --bg-fill ~/.config/wall.jpg &
-#xcompmgr &
 polybar -r bar &
 sxhkd &
 qjackctl &

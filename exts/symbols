@@ -6,6 +6,7 @@ n̪  | nth
 tʃ | ch
 ·  | .
 ə  | uh
+ʌ  | 'uh
 ä  | a
 ɛ - | ae
 æ  | ae
@@ -15,7 +16,8 @@ d̪  | dth
 ɳɫ | nl
 əɻ |ur 
 ā | ei
-ɽɻ | dr
+ɖɻ | dr
+ɽɻ | ddr
 ɚ | ur
 ɑ˞ | ar
 ɔɻ | or
@@ -62,7 +64,7 @@ n̩ | n
 ɨ | ih- 
 ʉ | uh-
 ɵ | u 
-o͞o | u
+o͞o | uu
 "
 echo "$Symbols" | dmenu -i -l 10 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
 notify-send "$(xclip -o -selection clipboard) copied to clipboard"
