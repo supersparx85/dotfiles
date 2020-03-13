@@ -6,7 +6,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 call plug#begin('~/.vim/plugged')
 Plug 'triglav/vim-visual-increment'
-Plug 'junegunn/goyo.vim'
 call plug#end()
 
 set bg=light
@@ -34,10 +33,8 @@ filetype indent on
 syntax on
 
 map <leader>e :silent! !chmod 777 %<CR>
-map <leader>g :Goyo<CR>
 map <leader>w :w!<CR>
 map <leader>q :q!<CR>
-map <leader>l :highlight Normal ctermfg=black ctermbg=white <CR>
 imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
 autocmd BufWritePost *bspwmrc :silent! !bspc wm -r &
