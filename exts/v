@@ -1,11 +1,8 @@
 #!/bin/sh
 [[ "$1" = "" ]] && exit
 case "$1" in
-        *.jpg|*.png|*.gif|*.jpeg|*.webp|*.jpeg_large) pkill sxiv; nohup sxiv -ab "$1" >/dev/null 2>&1 &;;
+        *.jpg|*.png|*.gif|*.jpeg|*.webp|*.jpeg_large) nohup sxiv -ab "$1" >/dev/null 2>&1 &;;
         *.mp4|*.webm|*.mkv|*youtube.com*) nohup mpv "$1" > /dev/null 2>&1 &;;
-        *.pdf) zathura "$1" >/dev/null 2>&1 &;;
-        *.gba) mgba-qt "$1" >/dev/null 2>&1 &;;
-        *.ove) nohup olive-editor "$1" >/dev/null 2>&1 &;;
         *.ogg|*.mp3) nohup ffplay -loop 0 "$1" >/dev/null 2>&1 &;;
         *) nvim "$1" ;;
 esac

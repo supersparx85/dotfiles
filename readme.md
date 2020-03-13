@@ -1,6 +1,6 @@
 # Minimalist studio Rice
 
-![](https://www.westernhills-music.com/wp-content/uploads/2018/03/music-staff_b1d89oyes__F0000.png)
+![](https://wallpapercave.com/wp/lmf9BZk.jpg)
 
 ### Apps
 Type | App |

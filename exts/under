@@ -1,7 +1,0 @@
-#!/bin/sh
-text="$(xclip -o)"
-
-#color=
-echo "<u>$text</u>" | tr -d '\n' | xclip -selection clipboard
-notify-send "$(xclip -o -selection clipboard) copied to clipboard"
-

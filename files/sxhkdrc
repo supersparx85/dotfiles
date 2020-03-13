@@ -3,22 +3,17 @@ alt {_,shift + } Return
 		{st,st -c CenterTerminal}
 
 alt + o ; {w,p,f,q,t,v,n}
-		{firefox,pcmanfm ~,filezilla,Qbitorrent,telegram-desktop,st -e vifm ~,nitrogen}&
-
-alt + s ; {q,a}
-		{qjackctl, ardour5}
+		{firefox,pcmanfm ~,telegram-desktop,st -e vifm ~,nitrogen}&
 alt + d
 		dmenu_run -i -l 5
-
 alt + l
-		pkill mpv; pkill sxiv; pkill feh
-alt {_,shift+ } + l
-		{scrot, scrot -s} ~/documents/file.jpg
+		pkill mpv; pkill sxiv
 
-shift + {k,p,e}
-		~/Documents/dotfiles/exts/{color,under,emojis}
-alt + shift {e,w,n}
-		~/Documents/dotfiles/exts/{dmn_power,words,symbols} &
+alt +shift + s
+		flameshot gui
+
+alt + shift {e,w}
+		~/Documents/dotfiles/exts/{dmn_power,words} &
 
 alt + {g,y,n}
 		~/Documents/dotfiles/exts/{class,yt}
@@ -30,6 +25,7 @@ shift {p,d}
 		mpc {toggle,repeat}
 
 shift + {z,x}
+		sleep 1
 		xbacklight {-dec,-inc} 5
 
 ctrl + alt + {Left, Down, Up, Right}
