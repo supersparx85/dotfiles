@@ -15,8 +15,8 @@ alt +shift + s
 alt + shift {e,w}
 		~/Documents/dotfiles/exts/{dmn_power,words} &
 
-alt + {g,y}
-		~/Documents/dotfiles/exts/{class,yt}
+alt + {g,y,n}
+		~/Documents/dotfiles/exts/{class,yt,symbols}
 
 shift {u,d,m}
 		~/Documents/dotfiles/exts/vol {up,down,toggle} &

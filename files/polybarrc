@@ -44,7 +44,7 @@ font-3 = Font Awesome 5 Brands:pixelsize=10;1
 
 modules-left = bspwm
 modules-center =
-modules-right = temperature memory alsa date
+modules-right = memory alsa date
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
