@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1583757898680,
-  "version": "1.25.0",
+  "timeStamp": 1584483772006,
+  "version": "1.25.2",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": true,
@@ -67,6 +67,7 @@
     "autoUpdateAssetFetchPeriod": 120,
     "autoUpdateDelayAfterLaunch": 180,
     "autoUpdatePeriod": 7,
+    "benchmarkDatasetURL": "unset",
     "blockingProfiles": "11111/#F00 11011/#C0F 11001/#00F 00001",
     "cacheStorageAPI": "unset",
     "cacheStorageCompression": true,
@@ -102,11 +103,12 @@
     "chrome-extension-scheme",
     "chrome-scheme",
     "moz-extension-scheme",
+    "short88.com",
     "www.whitesmoke.com"
   ],
-  "netWhitelist": "about-scheme\nchrome-extension-scheme\nchrome-scheme\nmoz-extension-scheme\nwww.whitesmoke.com",
+  "netWhitelist": "about-scheme\nchrome-extension-scheme\nchrome-scheme\nmoz-extension-scheme\nshort88.com\nwww.whitesmoke.com",
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
-  "userFilters": "! 2/2/2020 https://newrepublic.com\n||images.newrepublic.com/24bd60704392147bb5b41a4fadd3cd690a8668f4.png?w=315&q=60$image\n"
+  "userFilters": ""
 }
