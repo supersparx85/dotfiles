@@ -2,32 +2,23 @@
 Symbols="
 –  | -
 dʒ | dj
-n̪  | nth
 tʃ | ch
 ·  | .
 ə  | uh
-ʌ  | 'uh
 ä  | a
 ɛ - | ae
 æ  | ae
 d̪  | dth
 ð  | dth
-ɾ̃  | nn
-ɳɫ | nl
-əɻ |ur
-ā | ei
-ɖɻ | dr
-ɽɻ | ddr
-ɚ | ur
-ɑ˞ | ar
-ɔɻ | or
+ɛɨ | ei
 ē  | ee
-ī  | ai
+äɨ  | ai
 ŋ  | ng
-oʊ  | ow
-aʊ | aw
+oʉ  | ow
+aʉ | aw
 ɔ  | o
-ɔɪ | oi
+ɐ | 'uh
+ɔɨ | oi
 ɛ  | eh
 ɪ  | ih
 ɫ  | dark l
@@ -45,9 +36,6 @@ aʊ | aw
 —  | --
 →  | ->
 ŋ̚ | ng]
-æ̃ | ae~
-ɔ̃ | o~
-ɪ̃ | ih~
 b̚ | b]
 ɻɖɻ̩ | rdr
 ɻɳɻ̩ | rnr
@@ -61,9 +49,9 @@ n̩ | n
 ɖ | dd
 ɳ | nn
 ɽ | dd
-ɨ | ih-
+ɨ | i-
 ʉ | uh-
-ɵ | u
+ɵ | oh
 o͞o | uu
 "
 echo "$Symbols" | dmenu -i -l 10 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
