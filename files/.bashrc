@@ -58,7 +58,7 @@ function ee(){
 }
 
 function cleangit(){
-	git checkout --orphan temp_branch;git add -A; git commit -am "Commit history deleted"; git branch -D master; git branch -m master; git push -f origin master
+	git checkout --orphan temp_branch;git add -A; git commit -am "history deleted"; git branch -D master; git branch -m master; git push -f origin master
 }
 function createwallpape(){
 		convert -size 1920x1080 "xc:#282828" -gravity center -pointsize 93 -weight 700 -fill "#bbbbbb" -annotate 0 "$(echo "Type in the message" | dmenu -p -i -l 5)" ~/.config/wall.jpg && feh --bg-scale ~/.config/wall.jpg
@@ -66,10 +66,10 @@ function createwallpape(){
 
 function maid(){
 		sudo pacman -Syu --overwrite='*'
-		echo " Checking for updated packages" && yay
-		echo " Checking for pip updates and installing them " && sudo pip install --upgrade pip
+		echo "Searching for updates" && yay
+		echo "Searching for pip updates" && sudo pip install --upgrade pip
 		sudo pip list --outdated | awk 'NR >2 { print $1}' | xargs -I {} sudo pip install --upgrade "{}"
-		echo " Looking for unnecessary packages" && sudo pacman -Rsn $(pacman -Qtdq)
-		echo " Cleaning cache and history" && sudo pacman -Sc --noconfirm >/dev/null 2>&1
-		echo "$(find ~ -type d -empty -print -delete | wc -l) empty directories have been deleted."
+		echo "Listing unnecessary packages" && sudo pacman -Rsn $(pacman -Qtdq)
+		echo "Wiping out cache and history" && sudo pacman -Sc --noconfirm >/dev/null 2>&1
+		echo "$(find ~ -type d -empty -print -delete | wc -l) empty folders deleted."
 }
