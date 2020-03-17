@@ -28,7 +28,7 @@ set wildmode=longest,list,full
 set noshowmode
 set synmaxcol=500
 set sidescroll=1
-
+hi CursorLineNr ctermfg=Green
 filetype indent on
 syntax on
 
