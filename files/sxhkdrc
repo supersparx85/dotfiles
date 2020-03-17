@@ -19,7 +19,7 @@ alt + {g,y,n}
 		~/Documents/dotfiles/exts/{class,yt,symbols}
 
 shift {u,d,m}
-		~/Documents/dotfiles/exts/vol {up,down,toggle} &
+		amixer set Master {3+,3-,toggle};
 
 shift {p,d}
 		mpc {toggle,repeat}
