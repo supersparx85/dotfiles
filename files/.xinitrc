@@ -7,7 +7,6 @@ xmodmap $HOME/.Xmodmap
 setxkbmap -layout br &
 xsetroot -cursor_name arrow &
 numlockx on &
-nitrogen --restore &
 polybar -r bar &
 sxhkd &
 qjackctl &

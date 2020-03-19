@@ -66,10 +66,10 @@ function createwallpape(){
 
 function maid(){
 		sudo pacman -Syu --overwrite='*'
-		echo "Searching for updates" && yay
+		yay
 		echo "Searching for pip updates" && sudo pip install --upgrade pip
 		sudo pip list --outdated | awk 'NR >2 { print $1}' | xargs -I {} sudo pip install --upgrade "{}"
-		echo "Listing unnecessary packages" && sudo pacman -Rsn $(pacman -Qtdq)
+		sudo pacman -Rsn $(pacman -Qtdq) && echo "Listing unnecessary packages"
 		echo "Wiping out cache and history" && sudo pacman -Sc --noconfirm >/dev/null 2>&1
 		echo "$(find ~ -type d -empty -print -delete | wc -l) empty folders deleted."
 }
