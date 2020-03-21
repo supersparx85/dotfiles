@@ -7,8 +7,12 @@ xmodmap $HOME/.Xmodmap
 setxkbmap -layout br &
 xsetroot -cursor_name arrow &
 numlockx on &
-polybar -r bar &
-sxhkd &
-qjackctl &
+#polybar -r bar &
+#sxhkd &
+#qjackctl &
 megasync &
-bspwm
+#bspwm
+
+while :; do
+	ssh-agent dwm
+done
