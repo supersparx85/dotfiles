@@ -18,7 +18,7 @@ Type | App |
 🖼 | [sxiv](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/config/sxiv/exec/key-handler) |
  | [Xresources](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/sxiv.conf) & [scripts](https://github.com/TecPr0gr4mm3r/dotfiles/tree/master/exts)|
 
-### Others
+### Non-cli apps
 Type | Apps
 -|-
 🎹 | [Ardour 5](https://ardour.org/)
