@@ -12,7 +12,7 @@ numlockx on &
 #qjackctl &
 megasync &
 #bspwm
-
+dwmblocks &
 while :; do
 	ssh-agent dwm
 done
