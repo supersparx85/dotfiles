@@ -8,8 +8,7 @@ Type | App |
 Operation System | Arch BTW |
 Desktop Environment | None |
 Login Manager | [Xinitrc](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/.xinitrc) & [bash_profile](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/.profile) |
-Window manager | [bspwm](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/bspwmrc)
-Hotkey| [sxhkd](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/sxhkdrc)
+Window manager | [Dwm](https://github.com/TecPr0gr4mm3r/dotfiles/tree/master/suckless/dwm)
 Terminal | [st](https://github.com/TecPr0gr4mm3r/dotfiles/tree/master/suckless/st) |
 Text Editor | [nvim](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/init.vim) & [Default](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/Default.vifm)|
 Notification | [dunst](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/dunstrc) |
