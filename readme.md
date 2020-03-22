@@ -16,7 +16,7 @@ Type | App |
 📼 | [mpv](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/mpv.conf) |
 🎵 | [mpd](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/mpd.conf) & [ncmpcpp](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/ncmpcpp) |
 🖼 | [sxiv](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/config/sxiv/exec/key-handler) |
- | [Xresources](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/sxiv.conf) & [scripts](https://github.com/TecPr0gr4mm3r/dotfiles/tree/master/exts)|
+📄 | [Xresources](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/sxiv.conf) & [scripts](https://github.com/TecPr0gr4mm3r/dotfiles/tree/master/exts)|
 
 ### Non-cli apps
 Type | Apps
