@@ -13,6 +13,7 @@ numlockx on &
 megasync &
 #bspwm
 dwmblocks &
+feh --bg-fill ~/.config/wall.jpg
 while :; do
 	ssh-agent dwm
 done
