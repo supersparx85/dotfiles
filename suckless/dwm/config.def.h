@@ -82,6 +82,8 @@ static Key keys[] = {
 	{ ShiftMask,			XK_m,		spawn,	SHCMD("amixer sset Master toggle ; pkill -RTMIN+10 dwmblocks") },
 	{ ShiftMask,			XK_u,		spawn,	SHCMD("amixer sset Master 5%+ ; pkill -RTMIN+10 dwmblocks") },
 	{ ShiftMask,			XK_l,		spawn,	SHCMD("emojis") },
+	{ ShiftMask,			XK_w,		spawn,	SHCMD("sxiv ~/Documents/Mega/W/wallpapers/ -t &") },
+	
 	{ ShiftMask,			XK_p,		spawn,	{.v = mpctoggle} },
 
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
