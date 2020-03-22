@@ -1,0 +1,5 @@
+#!/bin/sh
+emoji=$(cat ~/Documents/dotfiles/exts/emoji | dmenu -i -l 5 | cut -d ' ' -f1)
+[ "$emoji" != "" ] || exit
+echo "$emoji" | tr -d '\n' | xclip -selection clipboard
+notify-send "$emoji copied to clipboard."
