@@ -31,7 +31,7 @@ alias rml="sudo reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 alias nowallpaper="xsetroot -solid '#282828'"
 alias pm="sudo pacman -Syu --overwrite='*'"
 alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
-alias j="sudo make clean install;"
+alias j="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;"
 
 function ga(){
 		cd ~/Documents/dotfiles/

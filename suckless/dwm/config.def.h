@@ -6,9 +6,12 @@ static const unsigned int gappx     = 5;        /* gap pixel between windows */
 static const unsigned int snap      = 5;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[] = {
-    "FontAwesome:size=10",
-	"monospace:size=10",
+
+
+static const char *fonts[]          = { "monospace:size=10",
+										"Font Awesome 5 Free Regular-10:pixelsize=10:antialias=true:autohint=true",
+										"Font Awesome 5 Free Solid-10:pixelsize=10:antialias=true:autohint=true"
+										"Font Awesome 5 Free Brand-10:pixelsize=10:antialias=true:autohint=true"
 };
 static const char col_gray1[]       = "#000000"; /* Non-activated bar background */
 static const char col_gray2[]       = "#000000"; /* Non-activated window border */
@@ -43,7 +46,8 @@ static const Rule rules[] = {
 static const float mfact     = 0.51;  /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
-
+/* helper for spawning shell commands in the pre dwm-5.0 fashion */
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "",      tile },    /* first entry is default */
@@ -64,7 +68,7 @@ static const char *killapp[] = {"xdotool", "getwindowfocus", "windowkill"};
 static const char *pcmanfm[] = {"pcmanfm",NULL};
 static const char *mpctoggle[] = {"mpc","toggle",NULL};
 static const char *volup[] = {"vol","up"};
-static const char *voldown[] = {"vol","down"};
+static const char *voldown[] = {"amixer sset Master 5%- ; pkill -RTMIN+10 dwmblocks","down"};
 static const char *voltoggle[] = {"vol","toggle"};
 static const char *telegramapp[] = {"telegram-desktop"};
 static const char *wordcount[] = {"words"};
@@ -87,9 +91,9 @@ static Key keys[] = {
 	{ ShiftMask, 					XK_t, spawn, {.v =telegramapp}},
 
 
-	{ ShiftMask,			XK_d,		spawn,	{.v = voldown} },
-	{ ShiftMask,			XK_m,		spawn,	{.v = voltoggle} },
-	{ ShiftMask,			XK_u,		spawn,	{.v = volup} },
+	{ ShiftMask,			XK_d,		spawn,	SHCMD("amixer sset Master 5%- ; pkill -RTMIN+10 dwmblocks") },
+	{ ShiftMask,			XK_m,		spawn,	SHCMD("amixer sset Master toggle ; pkill -RTMIN+10 dwmblocks") },
+	{ ShiftMask,			XK_u,		spawn,	SHCMD("amixer sset Master 5%+ ; pkill -RTMIN+10 dwmblocks") },
 	{ ShiftMask,			XK_p,		spawn,	{.v = mpctoggle} },
 
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
