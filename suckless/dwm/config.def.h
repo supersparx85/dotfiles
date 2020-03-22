@@ -46,10 +46,10 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "",      tile },    /* first entry is default */
-	{ "",      NULL },    /* no layout function means floating behavior */
-	{ "",      monocle },
-	{ "",      gaplessgrid },
+	{ "📄",      tile },    /* first entry is default */
+	{ "✈",      NULL },    /* no layout function means floating behavior */
+	{ "🌕",      monocle },
+	{ "🔳",      gaplessgrid },
 };
 
 /* key definitions */
@@ -90,6 +90,7 @@ static Key keys[] = {
 	{ ShiftMask,			XK_d,		spawn,	SHCMD("amixer sset Master 5%- ; pkill -RTMIN+10 dwmblocks") },
 	{ ShiftMask,			XK_m,		spawn,	SHCMD("amixer sset Master toggle ; pkill -RTMIN+10 dwmblocks") },
 	{ ShiftMask,			XK_u,		spawn,	SHCMD("amixer sset Master 5%+ ; pkill -RTMIN+10 dwmblocks") },
+	{ ShiftMask,			XK_l,		spawn,	SHCMD("emojis") },
 	{ ShiftMask,			XK_p,		spawn,	{.v = mpctoggle} },
 
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
