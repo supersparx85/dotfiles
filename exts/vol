@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "$(amixer sget Master | grep Mono: | cut -d " " -f6 | tr -d '[]')"
