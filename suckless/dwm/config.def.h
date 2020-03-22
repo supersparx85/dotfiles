@@ -59,19 +59,10 @@ static const Layout layouts[] = {
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} },
 static const char *dmenu[] = { "dmenu_run", "-i", "-l", "4", NULL};
 static const char *terminal[] = { "st",NULL };
-static const char *centerterminal[] = { "st","-c","CenterTerminal" };
 static const char *killapp[] = {"xdotool", "getwindowfocus", "windowkill"};
 static const char *pcmanfm[] = {"pcmanfm",NULL};
 static const char *mpctoggle[] = {"mpc","toggle",NULL};
-static const char *volup[] = {"vol","up"};
-static const char *voldown[] = {"amixer sset Master 5%- ; pkill -RTMIN+10 dwmblocks","down"};
-static const char *voltoggle[] = {"vol","toggle"};
 static const char *telegramapp[] = {"telegram-desktop"};
-static const char *wordcount[] = {"words"};
-static const char *manager[] = {"dmn_power"};
-static const char *getclass[] = {"class"};
-static const char *symbols[] = {"symbols"};
-static const char *yts[] = {"yt"};
 static const char *backlightdesc[] = {"xbacklight","-dec","5"};
 static const char *backlightinc[] = {"xbacklight","-inc","5"};
 
@@ -79,10 +70,10 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,			XK_d,	   	spawn, {.v = dmenu } },
 	{ MODKEY,		XK_Return, 	spawn, {.v = terminal }},
-	{ MODKEY|ShiftMask,		XK_Return, 	spawn, {.v = centerterminal }},
-	{ MODKEY|ShiftMask,		XK_n,	   	spawn,	{.v = symbols} },
-	{ MODKEY|ShiftMask,		XK_w,	   	spawn,	{.v = wordcount }},
-	{ MODKEY,			XK_y,	  	spawn,	{.v = yts} },
+	{ MODKEY|ShiftMask,		XK_Return, 	spawn, SHCMD("st -c CenterTerminal") },
+	{ MODKEY|ShiftMask,		XK_n,	   	spawn,	SHCMD("symbols") },
+	{ MODKEY|ShiftMask,		XK_w,	   	spawn,	SHCMD("words") },
+	{ MODKEY,			XK_y,	  	spawn,	SHCMD("yt") },
 	{ ShiftMask,  XK_v,		spawn,	{.v = pcmanfm } },
 	{ ShiftMask, 					XK_t, spawn, {.v =telegramapp}},
 
@@ -106,11 +97,11 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r, 	   zoom,           {0} },
     { MODKEY,             XK_q,      killclient,     {0} },
 	{ MODKEY|ShiftMask,				XK_q,	   spawn,  {.v = killapp } },
-	{ MODKEY|ShiftMask,				XK_s,	   spawn,  {.v = getclass } },
+	{ MODKEY|ShiftMask,				XK_s,	   spawn,  SHCMD("class") },
 	{ MODKEY|ShiftMask,				XK_z,	   spawn,  {.v = backlightdesc } },
 	{ MODKEY|ShiftMask,				XK_x,	   spawn,  {.v = backlightinc } },
 
-	{ MODKEY|ShiftMask,		XK_e,	  	spawn,	{.v = manager} },
+	{ MODKEY|ShiftMask,		XK_e,	  	spawn,	SHCMD("dmn_power") },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
