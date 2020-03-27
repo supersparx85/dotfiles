@@ -25,6 +25,7 @@ static const char *tags[] = { "1", "2", "3", "4", "5", "6","7", "8", "9" };
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     iscentered     isfloating   monitor */
 	{ "firefox",  NULL,       NULL,     	1 << 1,       0,             0,           -1 },
+	{ "Brave-browser",  NULL,       NULL,     	1 << 1,       0,             0,           -1 },
 	{ "Filezilla",		NULL,		NULL,	0,	-1,	-1,		-1 },
 	{ "CenterTerminal",		NULL,		NULL,	0,	-1,	-1,		-1 },
 	{ "Gimp",		NULL,		NULL,		1 <<  2,	0,	0,		-1 },
@@ -83,7 +84,7 @@ static Key keys[] = {
 	{ ShiftMask,			XK_u,		spawn,	SHCMD("amixer sset Master 5%+ ; pkill -RTMIN+10 dwmblocks") },
 	{ ShiftMask,			XK_l,		spawn,	SHCMD("emojis") },
 	{ ShiftMask,			XK_w,		spawn,	SHCMD("sxiv ~/Documents/Mega/W/wallpapers/ -t &") },
-	
+
 	{ ShiftMask,			XK_p,		spawn,	{.v = mpctoggle} },
 
 	{ MODKEY,                       XK_b,      togglebar,      {0} },

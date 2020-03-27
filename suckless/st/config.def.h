@@ -6,10 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
-
-static char *font = "UbuntuMono Nerd font:pixelsize=16:antialias=true:autohint=true";
-static char *font2[] = {"Symbola:pixelsize=12:antialias=true:autohint=true"};
-static char *font3[] = {"FontAwesome5Free:pixelsize=12:antialias=true:autohint=true"};
+static char *font = "monospace:size=10";
+static char *font2[] = {"JoyPixels:pixelsize=10:antialias=true:autohint=true"};
 static int borderpx = 2;
 
 /*
