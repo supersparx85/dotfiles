@@ -59,7 +59,6 @@ static const Layout layouts[] = {
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} },
 static const char *dmenu[] = { "dmenu_run", "-i", "-l", "4", NULL};
-static const char *terminal[] = { "st",NULL };
 static const char *killapp[] = {"xdotool", "getwindowfocus", "windowkill"};
 static const char *pcmanfm[] = {"pcmanfm",NULL};
 static const char *mpctoggle[] = {"mpc","toggle",NULL};
@@ -70,7 +69,7 @@ static const char *backlightinc[] = {"xbacklight","-inc","5"};
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,			XK_d,	   	spawn, {.v = dmenu } },
-	{ MODKEY,		XK_Return, 	spawn, {.v = terminal }},
+	{ MODKEY,		XK_Return, 	spawn, SHCMD("st")},
 	{ MODKEY|ShiftMask,		XK_Return, 	spawn, SHCMD("st -c CenterTerminal") },
 	{ MODKEY|ShiftMask,		XK_n,	   	spawn,	SHCMD("symbols") },
 	{ MODKEY|ShiftMask,		XK_w,	   	spawn,	SHCMD("words") },
