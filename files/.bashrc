@@ -64,13 +64,3 @@ function cleangit(){
 function createwallpape(){
 		convert -size 1920x1080 "xc:#282828" -gravity center -pointsize 93 -weight 700 -fill "#bbbbbb" -annotate 0 "$(echo "Type in the message" | dmenu -p -i -l 5)" ~/.config/wall.jpg && feh --bg-scale ~/.config/wall.jpg
 }
-
-function maid(){
-		sudo pacman -Syu --overwrite='*'
-		yay
-		echo "Searching for pip updates" && sudo pip install --upgrade pip
-		sudo pip list --outdated | awk 'NR >2 { print $1}' | xargs -I {} sudo pip install --upgrade "{}"
-		sudo pacman -Rsn $(pacman -Qtdq) && echo "Listing unnecessary packages"
-		echo "Wiping out cache and history" && sudo pacman -Sc --noconfirm >/dev/null 2>&1
-		echo "$(find ~ -type d -empty -print -delete | wc -l) empty folders deleted."
-}
