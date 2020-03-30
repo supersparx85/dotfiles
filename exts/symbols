@@ -1,27 +1,22 @@
 #!/bin/sh
 Symbols="
 –  | -
-dʒ | dj
+d͡ʒ | dj
 tʃ | ch
 ·  | .
 ə  | uh
-ä  | a
-ɛ - | ae
 æ  | ae
-ð  | dth
-ɛɨ | ei
 ə̃  | uh~
-ē  | ee
-äɨ  | ai
+ɾ̃  | n
+ɔɪ | oi
+aɪ  | ai
 ŋ  | ng
-oʉ  | ow
-äʉ | aw
+oʊ  | ou
+aʊ | au
 ɔ  | o
 ɐ | 'uh
-ɔɨ | oi
 ɛ  | eh
 ɪ  | ih
-ɫ  | dark l
 ɱ  | mf
 ɸ  | f]
 ɹ  | rr
@@ -32,19 +27,11 @@ oʉ  | ow
 ʔ  | glottal ?
 ʰ  | h_
 β  | v]
+ð  | dth
 θ  | th
 —  | --
 →  | ->
 n̩ | n
-ɻ | rr
-ɖ | dd
-ɳ | nn
-ɽ | dd
-ɨ | i-
-ʉ | uh-
-ɵ | oh
-oo | uu
-jɨ |juh
 "
 echo "$Symbols" | dmenu -i -l 10 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
 notify-send "$(xclip -o -selection clipboard) copied to clipboard"
