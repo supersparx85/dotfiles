@@ -14,7 +14,7 @@ aɪ  | ai
 oʊ  | ou
 aʊ | au
 ɔ  | o
-ɐ | 'uh
+ʌ | 'uh
 ɛ  | eh
 ɪ  | ih
 ɱ  | mf
@@ -32,6 +32,8 @@ aʊ | au
 —  | --
 →  | ->
 n̩ | n
+ɝ | 'ur
+ɚ | ur
 "
 echo "$Symbols" | dmenu -i -l 10 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
 notify-send "$(xclip -o -selection clipboard) copied to clipboard"
