@@ -6,6 +6,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 call plug#begin('~/.vim/plugged')
 Plug 'triglav/vim-visual-increment'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 set bg=light
@@ -40,6 +41,6 @@ imap ;ssh #!/bin/sh
 autocmd BufWritePost *bspwmrc :silent! !bspc wm -r &
 autocmd BufWritePost *dunstrc :silent! !killall dunst &
 autocmd BufWritePost *sxhkdrc :silent! !pkill -USR1 -x sxhkd &
-autocmd BufWritePost ~/.Xresources,-/.Xdefaults !xrdb %
+autocmd BufWritePost *.Xresources,*Xdefaults !xrdb ~/.Xresources
 autocmd BufWritePre * $put _ | $;?\(^\s*$\)\@!?+1,$d
 autocmd BufWritePre * :silent! %s/\s\+$//e

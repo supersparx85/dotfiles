@@ -8,6 +8,7 @@
 
 static char *font = "monospace:size=12";
 static char *font2[] = {"JoyPixels:pixelsize=10:antialias=true:autohint=true"};
+static char *font3[] = {"UbuntuMono Nerd font:pixelsize=16:antialias=true:autohint=true"};
 static int borderpx = 2;
 
 /*

@@ -33,11 +33,6 @@ alias pm="sudo pacman -Syu --overwrite='*'"
 alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
 alias j="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;"
 
-function ga(){
-		cd ~/Documents/dotfiles/
-		git status .
-}
-
 function vf(){
 	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/Documents/dotfiles/exts/v "{}"
 }
