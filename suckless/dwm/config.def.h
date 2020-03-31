@@ -34,7 +34,7 @@ static const Rule rules[] = {
 	{ "Subl3",  NULL,       NULL,      		1 << 2,       0,             0,           -1 },
 	{ "kdenlive",	NULL,		NULL,	1 <<  3,	0,		-1 },
 	{ "Pcmanfm",	NULL,		NULL,	1 <<  3,	0,		0 },
-	{ "mpv",	NULL,		NULL,	1 <<  4,	0,		0 },
+/*	{ "mpv",	NULL,		NULL,	1 <<  4,	0,		0 }, */
 	{ "TelegramDesktop",	NULL,		NULL,	1 <<  5,	0,		0 },
 };
 
