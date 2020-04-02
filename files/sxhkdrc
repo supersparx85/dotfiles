@@ -2,8 +2,8 @@
 alt {_,shift + } Return
 		{st,st -c CenterTerminal}
 
-alt + o ; {w,p,t,v}
-		{firefox,pcmanfm ~,telegram-desktop,st -e vifm ~}&
+alt + o ; {w,p,t,v,a}
+		{firefox,pcmanfm ~,telegram-desktop,st -e vifm ~,Waveform11}&
 alt + d
 		dmenu_run -i -l 5
 alt + l
