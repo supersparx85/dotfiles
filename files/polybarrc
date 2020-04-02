@@ -36,10 +36,11 @@ padding-left = 0
 padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
-font-0 = fixed:pixelsize=10;1
-font-1 = Font Awesome 5 Free:pixelsize=10;1
-font-2 = Font Awesome 5 Free Solid:pixelsize=10;1
-font-3 = Font Awesome 5 Brands:pixelsize=10;1
+font-0 = monospace:size=10
+font-1 = JoyPixels:scale=12
+font-2 = Font Awesome 5 Free:pixelsize=10;1
+font-3 = Font Awesome 5 Free Solid:pixelsize=10;1
+font-4 = Font Awesome 5 Brands:pixelsize=10;1
 
 
 modules-left = bspwm
@@ -67,7 +68,7 @@ label-empty-padding = 2
 
 [module/memory]
 type=custom/script
-exec=echo " $(free -h | awk '/Mem/ {print $3 "/" $2}') "
+exec=echo "🧠 $(free -h | awk '/Mem/ {print $3 "/" $2}')"
 interval=1m
 
 [module/temperature]
@@ -78,8 +79,8 @@ interval=30m
 [module/date]
 type = internal/date
 interval = 1.0
-date = |  %I:%M%p
-date-alt = |  %b %d (%a) |  %I:%M%p
+date = |🕓 %I:%M%p
+date-alt = |📆 %b %d (%a) |🕓 %I:%M%p
 
 [settings]
 screenchange-reload = true
@@ -90,7 +91,7 @@ margin-bottom = 5
 
 [module/alsa]
 type = internal/alsa
-format-volume = |  <label-volume>
+format-volume =|🔊 <label-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 format-muted-prefix = "|  "

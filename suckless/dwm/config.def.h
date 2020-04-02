@@ -63,8 +63,6 @@ static const char *killapp[] = {"xdotool", "getwindowfocus", "windowkill"};
 static const char *pcmanfm[] = {"pcmanfm",NULL};
 static const char *mpctoggle[] = {"mpc","toggle",NULL};
 static const char *telegramapp[] = {"telegram-desktop"};
-static const char *backlightdesc[] = {"xbacklight","-dec","5"};
-static const char *backlightinc[] = {"xbacklight","-inc","5"};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -100,9 +98,8 @@ static Key keys[] = {
     { MODKEY,             XK_q,      killclient,     {0} },
 	{ MODKEY|ShiftMask,				XK_q,	   spawn,  {.v = killapp } },
 	{ MODKEY|ShiftMask,				XK_s,	   spawn,  SHCMD("class") },
-	{ MODKEY|ShiftMask,				XK_z,	   spawn,  {.v = backlightdesc } },
-	{ MODKEY|ShiftMask,				XK_x,	   spawn,  {.v = backlightinc } },
-
+	{ MODKEY|ShiftMask,				XK_c,	   spawn,  SHCMD("xbacklight -dec 5")},
+	{ MODKEY|ShiftMask,				XK_x,	   spawn,  SHCMD("xbacklight -inc 5")},
 	{ MODKEY|ShiftMask,		XK_e,	  	spawn,	SHCMD("dmn_power") },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },

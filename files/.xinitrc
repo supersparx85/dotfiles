@@ -7,13 +7,12 @@ xmodmap $HOME/.Xmodmap
 setxkbmap -layout br &
 xsetroot -cursor_name arrow &
 numlockx on &
-#polybar -r bar &
-#sxhkd &
-#qjackctl &
-megasync &
-#bspwm
-dwmblocks &
+polybar -r bar &
+sxhkd &
 xwallpaper --zoom ~/.config/wall.jpg
-while :; do
-	ssh-agent dwm
-done
+megasync &
+bspwm
+#dwmblocks &
+#while :; do
+#	ssh-agent dwm
+#done
