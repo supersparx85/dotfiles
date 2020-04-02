@@ -2,8 +2,8 @@
 alt {_,shift + } Return
 		{st,st -c CenterTerminal}
 
-alt + o ; {w,p,t,v,n}
-		{firefox,pcmanfm ~,telegram-desktop,st -e vifm ~,nitrogen}&
+alt + o ; {w,p,t,v}
+		{firefox,pcmanfm ~,telegram-desktop,st -e vifm ~}&
 alt + d
 		dmenu_run -i -l 5
 alt + l
@@ -12,11 +12,11 @@ alt + l
 alt +shift + s
 		flameshot gui
 
-alt + shift {e,w}
-		~/Documents/dotfiles/exts/{dmn_power,words} &
+alt + shift {e,w,l}
+		~/Documents/dotfiles/exts/{dmn_power,words,emojis} &
 
-alt + {g,y,n}
-		~/Documents/dotfiles/exts/{class,yt,symbols}
+alt + {g,y,n,w}
+		~/Documents/dotfiles/exts/{class,yt,symbols,wp}
 
 shift {u,d,m}
 		amixer set Master {3+,3-,toggle};
@@ -25,7 +25,6 @@ shift {p,d}
 		mpc {toggle,repeat}
 
 shift + {z,x}
-		sleep 1
 		xbacklight {-dec,-inc} 5
 
 ctrl + alt + {Left, Down, Up, Right}

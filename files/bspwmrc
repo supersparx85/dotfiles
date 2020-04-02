@@ -1,7 +1,4 @@
 #!/bin/bash
-[ $WALLPAPER = "nitrogen" ] && nitrogen --restore &
-
-
 pgrep xautolock | xautolock -time 5 -locker "amixer set Master mute && slock" &
 
 bspc rule -r "*"
