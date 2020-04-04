@@ -12,11 +12,11 @@ alt + l
 alt +shift + s
 		flameshot gui
 
-alt + shift {e,w,l}
-		~/Documents/dotfiles/exts/{dmn_power,words,emojis} &
+alt + shift {e,w,l,n}
+		~/Documents/dotfiles/exts/{dmn_power,words,emojis,symbols} &
 
-alt + {g,y,n,w}
-		~/Documents/dotfiles/exts/{class,yt,symbols,wp}
+alt + {g,y,w}
+		~/Documents/dotfiles/exts/{class,yt,wp}
 
 shift {u,d,m}
 		amixer set Master {3+,3-,toggle};

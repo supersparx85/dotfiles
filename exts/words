@@ -1,6 +1,6 @@
 #!/bin/sh
 words(){
-		phrase="$(xsel -o | tr -d "—.|?,")"
-		printf "Words $(echo "$phrase" | wc -w) \nCharacters $(echo "$phrase" | wc -c) \nLines $(echo "$phrase" | wc -l)"
+		phrase="$(xsel -o | tr -d "—.|?,-")"
+		printf "Words $(echo "$phrase" | wc -w) \nCharacters $(echo "$phrase" | wc -c) \nLines $(echo "$phrase" | wc -l) \nSyllables: $(echo "$phrase" | sed "s/-/ /" | wc -w)"
 }
 notify-send "$(words)"

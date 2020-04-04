@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1584483772006,
-  "version": "1.25.2",
+  "timeStamp": 1585971792106,
+  "version": "1.24.4",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": true,
@@ -10,7 +10,7 @@
     "colorBlindFriendly": false,
     "contextMenuEnabled": true,
     "dynamicFilteringEnabled": true,
-    "externalLists": "https://easylist-downloads.adblockplus.org/easylistportuguese.txt\nhttps://filters.adtidy.org/extension/ublock/filters/1.txt\nhttps://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Brazil.txt\nhttps://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt\nhttps://secure.fanboy.co.nz/r/fanboy-complete.txt\nhttps://secure.fanboy.co.nz/r/fanboy-ultimate.txt",
+    "externalLists": "https://easylist-downloads.adblockplus.org/easylistportuguese.txt\nhttps://filters.adtidy.org/extension/ublock/filters/1.txt\nhttps://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Brazil.txt\nhttps://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt\nhttps://secure.fanboy.co.nz/r/fanboy-complete.txt\nhttps://secure.fanboy.co.nz/r/fanboy-ultimate.txt\nhttps://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
     "firewallPaneMinimized": true,
     "hyperlinkAuditingDisabled": true,
     "ignoreGenericCosmeticFilters": false,
@@ -23,8 +23,10 @@
     "webrtcIPAddressHidden": true
   },
   "selectedFilterLists": [
+    "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
     "user-filters",
     "ublock-filters",
+    "ublock-annoyances",
     "ublock-badware",
     "ublock-privacy",
     "ublock-abuse",
@@ -46,7 +48,6 @@
     "fanboy-cookiemonster",
     "fanboy-annoyance",
     "fanboy-social",
-    "ublock-annoyances",
     "dpollock-0",
     "hphosts",
     "mvps-0",
@@ -54,11 +55,11 @@
     "spa-1",
     "spa-0",
     "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Brazil.txt",
+    "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt",
     "https://filters.adtidy.org/extension/ublock/filters/1.txt",
     "https://easylist-downloads.adblockplus.org/easylistportuguese.txt",
     "https://secure.fanboy.co.nz/r/fanboy-complete.txt",
-    "https://secure.fanboy.co.nz/r/fanboy-ultimate.txt",
-    "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
+    "https://secure.fanboy.co.nz/r/fanboy-ultimate.txt"
   ],
   "hiddenSettings": {
     "allowGenericProceduralFilters": false,
@@ -67,18 +68,10 @@
     "autoUpdateAssetFetchPeriod": 120,
     "autoUpdateDelayAfterLaunch": 180,
     "autoUpdatePeriod": 7,
-    "benchmarkDatasetURL": "unset",
     "blockingProfiles": "11111/#F00 11011/#C0F 11001/#00F 00001",
     "cacheStorageAPI": "unset",
     "cacheStorageCompression": true,
     "cacheControlForFirefox1376932": "no-cache, no-store, must-revalidate",
-    "cnameIgnoreList": "unset",
-    "cnameIgnore1stParty": true,
-    "cnameIgnoreExceptions": true,
-    "cnameIgnoreRootDocument": true,
-    "cnameMaxTTL": 120,
-    "cnameReplayFullURL": false,
-    "cnameUncloak": true,
     "consoleLogLevel": "unset",
     "debugScriptlets": false,
     "debugScriptletInjector": false,
@@ -94,7 +87,6 @@
     "selfieAfter": 3,
     "strictBlockingBypassDuration": 120,
     "suspendTabsUntilReady": "unset",
-    "uiFlavor": "unset",
     "updateAssetBypassBrowserCache": false,
     "userResourcesLocation": "unset"
   },
