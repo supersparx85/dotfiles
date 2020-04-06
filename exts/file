@@ -1,0 +1,11 @@
+#!/bin/sh
+notify-send "Vowels 7
+Semi-vowels 6
+Approximants 5
+Nasals 4
+Fricatives 3
+Affricates 2
+Stops 1
+glottal 0
+S *
+"

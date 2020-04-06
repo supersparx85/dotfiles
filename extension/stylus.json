@@ -25,7 +25,7 @@
 		"updateDate": 1584392515681,
 		"originalName": "Pinterest - Gray Theme",
 		"_id": "bb9ba73d-0a56-4c22-9400-5c883c4a521c",
-		"_rev": 1585724083120
+		"_rev": 1584489737605
 	},
 	{
 		"enabled": true,
@@ -163,7 +163,7 @@
 		"originalDigest": "ba031b83e108bb9ea96bc78d22a68241984452e3",
 		"id": 2,
 		"_id": "dbc876f5-b461-41d6-9825-65d84494d942",
-		"_rev": 1585032116112
+		"_rev": 1584448774654
 	},
 	{
 		"enabled": true,
@@ -249,7 +249,7 @@
 		"updateDate": 1579542541750,
 		"originalName": "YouTube - Better Full Dark Theme 2019 (ARC)",
 		"_id": "6e349d73-3fe8-453d-9291-64b6484d0b09",
-		"_rev": 1585032116112
+		"_rev": 1585291192446
 	},
 	{
 		"enabled": true,
@@ -275,7 +275,7 @@
 		"originalDigest": "258c2e4d620c471a64cbdf453c2d3a867b34e194",
 		"id": 5,
 		"_id": "8ebbff2d-6213-40aa-b0b5-0e25de2b9527",
-		"_rev": 1585032116112
+		"_rev": 1583416273661
 	},
 	{
 		"enabled": false,
@@ -308,7 +308,7 @@
 		"originalDigest": "46b38d60bd6c82a28bed7329c49cb20174d49ccd",
 		"id": 7,
 		"_id": "a8edef86-f132-42d6-a047-439204f68796",
-		"_rev": 1585032116112
+		"_rev": 1583416273661
 	},
 	{
 		"enabled": true,
@@ -332,7 +332,7 @@
 		"originalDigest": "9342c34a6aaafe29a90b0166f5a179e0f20fe9e4",
 		"id": 11,
 		"_id": "1286d1ae-dc78-48e2-bdeb-4327e95ddae7",
-		"_rev": 1585032116112
+		"_rev": 1583416273661
 	},
 	{
 		"enabled": true,
@@ -356,7 +356,7 @@
 		"originalDigest": "529a9ac942975db4eaa61c4c8688c38e6605f70f",
 		"id": 12,
 		"_id": "6a147753-ba46-47a7-a796-b38afa09387a",
-		"_rev": 1585032116112
+		"_rev": 1583416273662
 	},
 	{
 		"enabled": true,
@@ -380,7 +380,7 @@
 		"originalDigest": "d56a026a5109779f0158fd4e81c45adbbcc5189b",
 		"id": 29,
 		"_id": "4e8173f5-cfd9-43f7-af21-ad4f064ccb6b",
-		"_rev": 1585032116112
+		"_rev": 1583416273662
 	},
 	{
 		"enabled": true,
@@ -404,6 +404,6 @@
 		"originalDigest": "1c4520436848ae1a996ec1cc1774fb276bc58a03",
 		"id": 32,
 		"_id": "a148b663-b855-4b41-9ded-790a6c268ed8",
-		"_rev": 1585032116112
+		"_rev": 1583416273662
 	}
 ]

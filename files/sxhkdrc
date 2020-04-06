@@ -12,8 +12,8 @@ alt + l
 alt +shift + s
 		flameshot gui
 
-alt + shift {e,w,l,n}
-		~/Documents/dotfiles/exts/{dmn_power,words,emojis,symbols} &
+alt + shift {e,w,l,n,p}
+		~/Documents/dotfiles/exts/{dmn_power,words,emojis,symbols,file} &
 
 alt + {g,y,w}
 		~/Documents/dotfiles/exts/{class,yt,wp}
