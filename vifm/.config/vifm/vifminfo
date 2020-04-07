@@ -1,0 +1,77 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'b
+	/home/dgu/bin/
+	..
+1586226173
+'h
+	/home/dgu/
+	..
+1586226173
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/dgu
+	1*HXGbRMqyUttLVXH5io_vng.jpeg
+12
+d/home
+	dgu
+1
+d/
+	home
+7
+d/home
+	dgu
+1
+d/home/dgu
+	1*HXGbRMqyUttLVXH5io_vng.jpeg
+12
+d
+
+# Right window history (oldest to newest):
+D/home/dgu
+	..
+0
+D
+
+# Command line history (oldest to newest):
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/dgu/.local/share/vifm/Trash/000_colors
+""/home/dgu/.local/share/vifm/Trash/000_vifmrc
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/dgu/.local/share/vifm/Trash/000_colors
+	/home/dgu/colors
+t/home/dgu/.local/share/vifm/Trash/000_vifmrc
+	/home/dgu/vifmrc
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
