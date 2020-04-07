@@ -1,12 +1,12 @@
 #!/bin/sh
-cd ~/Documents/dotfiles/suckless/dwm || exit
+cd ~/dotfiles/suckless/dwm || exit
 sudo rm config.h; rm *.orig; rm *.rej; sudo make clean
-cd ~/Documents/dotfiles/suckless/dmenu || exit
+cd ~/dotfiles/suckless/dmenu || exit
 sudo rm config.h; rm *.orig; rm *.rej; sudo make clean
-cd ~/Documents/dotfiles/suckless/st || exit
+cd ~/dotfiles/suckless/st || exit
 sudo rm config.h; rm *.orig; rm *.rej; sudo make clean
-cd ~/Documents/dotfiles/suckless/dwmblocks || exit
+cd ~/dotfiles/suckless/dwmblocks || exit
 sudo rm config.h; rm *.orig; rm *.rej; sudo make clean
 
-cd ~/Documents/dotfiles/
+cd ~/dotfiles/
 git status .

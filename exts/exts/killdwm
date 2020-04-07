@@ -1,5 +1,6 @@
 #!/bin/sh
 cd ~/Documents/dotfiles/suckless/dwm || exit
-sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;
+sudo rm config.h; rm *.orig; rm *.rej; sudo make clean;
+sudo make clean install || exit
 pkill dwm && notify-send "Dwm succesfully restarted"
 nohup dwmblocks >/dev/null 2>&1 && notify-send "dwmblocks succesfully started"

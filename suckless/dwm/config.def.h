@@ -82,7 +82,8 @@ static Key keys[] = {
 	{ ShiftMask,			XK_l,		spawn,	SHCMD("emojis") },
 	{ ShiftMask,			XK_w,		spawn,	SHCMD("wp") },
 
-	{ ShiftMask,			XK_p,		spawn,	{.v = mpctoggle} },
+	{ ShiftMask,			XK_m,		spawn,	SHCMD("audacious --pause") },
+	{ ShiftMask,			XK_p,		spawn,	SHCMD("audacious --play") },
 
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = +1 } },

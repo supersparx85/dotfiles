@@ -1,5 +1,5 @@
 #!/bin/bash
-PATH=$PATH:~/Documents/dotfiles/exts
+PATH=$PATH:~/exts
 export BROWSER="chrome"
 export EDITOR="nvim"
 export TERMINAL="st"

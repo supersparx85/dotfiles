@@ -34,7 +34,7 @@ alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
 alias j="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;"
 
 function vf(){
-	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/Documents/dotfiles/exts/v "{}"
+	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/exts/v "{}"
 }
 
 function cdf(){
@@ -46,11 +46,11 @@ function cleanlinks(){
 }
 
 function ees(){
-	find ~/Documents/dotfiles/exts -type f |fzf --preview 'head -50 {}' | xargs -r nvim
+	find ~/dotfiles/exts -type f |fzf --preview 'head -50 {}' | xargs -r nvim
 }
 
 function ee(){
-	find ~/Documents/dotfiles -type f | grep -v ".git\|.exts\|.png\|Makefile\|util.h\|LICENSE\|.mk\|.1\|.info\|util.c" | fzf --preview 'head -50 {}' | xargs -r -I {} nvim "{}"
+	find ~/dotfiles -type f | grep -v ".git\|.exts\|.png\|Makefile\|util.h\|LICENSE\|.mk\|.1\|.info\|util.c" | fzf --preview 'head -50 {}' | xargs -r -I {} nvim "{}"
 }
 
 function cleangit(){
