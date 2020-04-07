@@ -10,7 +10,7 @@ numlockx on &
 qjackctl &
 polybar -r bar &
 sxhkd &
-xwallpaper --zoom ~/.config/wall.jpg
+~/exts/setbg
 megasync &
 bspwm
 #dwmblocks &

@@ -40,6 +40,7 @@ bspc rule -a Filezilla desktop='^6' follow=on
 bspc rule -a Qbitorrent desktop='^6' follow=on
 
 bspc rule -a TelegramDesktop desktop='^7'
+bspc rule -a audacious desktop='^6' follow=on
 
 bspc rule -a Ardour desktop='^8'	follow=on
 bspc rule -a Waveform11 desktop='^8'	follow=on

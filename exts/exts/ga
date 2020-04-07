@@ -7,6 +7,7 @@ cd ~/dotfiles/suckless/st || exit
 sudo make clean
 cd ~/dotfiles/suckless/dwmblocks || exit
 sudo make clean
-
+cd ~/dotfiles/audacious/.config/audacious/ || exit
+sudo rm -r lyrics playlists
 cd ~/dotfiles/
 git status .

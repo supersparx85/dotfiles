@@ -10,7 +10,7 @@ export AUDIOC="alsa"
 
 QT_QPA_PLATFORMTHEME=""
 QT_STYLE_OVERRIDE=""
-#[ -f /.bashrc ] && source ~/.bashrc
-#		if  [ "$(tty)" = "/dev/tty1" ]; then
-#				pgrep -x dwm || exec startx
-#fi
+[ -f /.bashrc ] && source ~/.bashrc
+		if  [ "$(tty)" = "/dev/tty1" ]; then
+				pgrep -x sxhkd || exec startx
+fi
