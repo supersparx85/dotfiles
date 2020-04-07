@@ -8,12 +8,12 @@ setxkbmap -layout br &
 xsetroot -cursor_name arrow &
 numlockx on &
 qjackctl &
-#polybar -r bar &
-#sxhkd &
+polybar -r bar &
+sxhkd &
 xwallpaper --zoom ~/.config/wall.jpg
 megasync &
-#bspwm
-dwmblocks &
-while :; do
-	ssh-agent dwm
-done
+bspwm
+#dwmblocks &
+#while :; do
+#	ssh-agent dwm
+#done
