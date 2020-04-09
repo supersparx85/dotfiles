@@ -35,8 +35,77 @@ d/home
 	dgu
 1
 d/home/dgu
-	1*HXGbRMqyUttLVXH5io_vng.jpeg
-12
+	..
+0
+d/home
+	dgu
+1
+d/home/dgu
+	.cache
+2
+d/home/dgu/.cache
+	..
+0
+d/home/dgu
+	.config
+3
+d/home/dgu/.config
+	nvim
+17
+d/home/dgu/.config/nvim
+	spell
+1
+d/home/dgu/.config/nvim/spell
+	en.utf-8.add.spl
+2
+d/home/dgu/.config/nvim
+	spell
+1
+d/home/dgu/.config
+	nvim
+17
+d/home/dgu
+	.vim
+21
+d/home/dgu/.vim
+	..
+0
+d/home/dgu
+	dotfiles
+23
+d/home/dgu/dotfiles
+	nvim
+10
+d/home/dgu/dotfiles/nvim
+	.config
+1
+d/home/dgu/dotfiles/nvim/.config
+	nvim
+1
+d/home/dgu/dotfiles/nvim/.config/nvim
+	spell
+1
+d/home/dgu/dotfiles/nvim/.config/nvim/spell
+	..
+0
+d/home/dgu/dotfiles/nvim/.config/nvim
+	spell
+1
+d/home/dgu/dotfiles/nvim/.config
+	nvim
+1
+d/home/dgu/dotfiles/nvim
+	.config
+1
+d/home/dgu/dotfiles/nvim/.config
+	nvim
+1
+d/home/dgu/dotfiles/nvim/.config/nvim
+	spell
+1
+d/home/dgu/dotfiles/nvim/.config/nvim/spell
+	en.utf-8.add
+1
 d
 
 # Right window history (oldest to newest):
@@ -68,7 +137,7 @@ t/home/dgu/.local/share/vifm/Trash/000_vifmrc
 # State:
 f
 i1
-[.1
+[.0
 [F
 F
 I1

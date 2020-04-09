@@ -41,7 +41,9 @@ map <leader>q :q!<CR>
 map <Leader>n :noh<CR>
 imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
-:inoremap <F2> <C-X><C-K>
+inoremap <F2> <C-X><C-K>
+map <f6> :setlocal spell! spelllang=en_us<CR>
+
 autocmd BufWritePost *bspwmrc :silent! !bspc wm -r &
 autocmd BufWritePost *dunstrc :silent! !killall dunst &
 autocmd BufWritePost *sxhkdrc :silent! !pkill -USR1 -x sxhkd &
