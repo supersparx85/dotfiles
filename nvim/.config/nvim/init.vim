@@ -41,10 +41,12 @@ set tabstop=4
 set termguicolors
 set wildmenu
 set wildmode=longest,list,full
+
 hi CursorLineNr ctermfg=Green
 filetype indent on
 syntax on
 hi QuickFixLine term=reverse ctermbg=52
+
 map <leader>e :silent! !chmod 777 %<CR>
 map <leader>w :w!<CR>
 map <leader>q :q!<CR>
@@ -52,15 +54,18 @@ map <Leader>n :noh<CR>
 imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
 inoremap <F2> <C-X><C-K>
-map <f6> :setlocal spell! spelllang=en_us<CR>
+map <Leader>o 1z=
+map <Leader>t z=
+map t :setlocal spell! spelllang=en_us<CR>
 " Enable autocompletion:
-	set wildmode=longest,list,full
+set wildmode=longest,list,full
 " Disables automatic commenting on newline:
-	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 autocmd BufWritePost *bspwmrc :silent! !bspc wm -r &
 autocmd BufWritePost *dunstrc :silent! !killall dunst &
 autocmd BufWritePost *sxhkdrc :silent! !pkill -USR1 -x sxhkd &
+autocmd BufWritePost *en.utf-8.add :mkspell! %
 autocmd BufWritePost *.Xresources,*Xdefaults !xrdb ~/.Xresources
 autocmd BufWritePre * $put _ | $;?\(^\s*$\)\@!?+1,$d
 autocmd BufWritePre * :silent! %s/\s\+$//e

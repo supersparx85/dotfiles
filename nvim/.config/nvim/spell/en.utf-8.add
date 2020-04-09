@@ -1,8 +1,37 @@
+/regions=uscagb
+#British vocabulary
+loo/3
+aeroplane/3
+jumper/3
+taxi/3
+trainers/3
+handbag/3
+rubbish/3
+bin/3
+
+
+#rare words
+bestest/?
+
+#bad words
 just/!
+
+#filter words
+that/?
+
+#good words
 gunna
-biscuit/!
-lorry/!
 fingerlings
 tryna
 coulda
 shoulda
+nah
+mic
+cuz
+Wikipedia
+wordsmith
+juvii
+why's
+unceasable
+diss
+I'ma
