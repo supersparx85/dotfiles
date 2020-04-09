@@ -54,8 +54,8 @@ map <Leader>n :noh<CR>
 imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
 inoremap <F2> <C-X><C-K>
-map <Leader>o 1z=
-map <Leader>t z=
+map <Leader>c 1z=
+map <Leader>o z=
 map t :setlocal spell! spelllang=en_us<CR>
 " Enable autocompletion:
 set wildmode=longest,list,full
