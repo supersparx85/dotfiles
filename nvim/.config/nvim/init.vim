@@ -29,6 +29,8 @@ set wildmode=longest,list,full
 set noshowmode
 set synmaxcol=500
 set sidescroll=1
+set dictionary+=/home/dgu/dotfiles/nvim/dics/words.txt
+set complete+=k
 hi CursorLineNr ctermfg=Green
 filetype indent on
 syntax on
@@ -39,6 +41,7 @@ map <leader>q :q!<CR>
 map <Leader>n :noh<CR>
 imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
+:inoremap <F2> <C-X><C-K>
 autocmd BufWritePost *bspwmrc :silent! !bspc wm -r &
 autocmd BufWritePost *dunstrc :silent! !killall dunst &
 autocmd BufWritePost *sxhkdrc :silent! !pkill -USR1 -x sxhkd &
