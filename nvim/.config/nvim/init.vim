@@ -7,34 +7,44 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'triglav/vim-visual-increment'
 Plug 'ap/vim-css-color'
+Plug 'kovetskiy/sxhkd-vim'
+Plug 'junegunn/goyo.vim'
+Plug 'dracula/vim'
 call plug#end()
 
-set bg=light
+color dracula
+
+set bg=dark
+set clipboard+=unnamedplus
 set clipboard=unnamed
+set complete+=k
+set dictionary+=/home/dgu/dotfiles/nvim/dics/words.txt
 set encoding=utf-8
 set expandtab
+set go=a
 set hlsearch
 set incsearch
 set lazyredraw
+set mouse=a
 set noexpandtab
+set nohlsearch
 set nomore
+set noshowmode
 set nrformats=alpha
 set relativenumber
 set showmatch
+set sidescroll=1
 set softtabstop=4
 set splitbelow splitright
+set synmaxcol=500
 set tabstop=4
+set termguicolors
 set wildmenu
 set wildmode=longest,list,full
-set noshowmode
-set synmaxcol=500
-set sidescroll=1
-set dictionary+=/home/dgu/dotfiles/nvim/dics/words.txt
-set complete+=k
 hi CursorLineNr ctermfg=Green
 filetype indent on
 syntax on
-
+hi QuickFixLine term=reverse ctermbg=52
 map <leader>e :silent! !chmod 777 %<CR>
 map <leader>w :w!<CR>
 map <leader>q :q!<CR>
@@ -43,6 +53,10 @@ imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
 inoremap <F2> <C-X><C-K>
 map <f6> :setlocal spell! spelllang=en_us<CR>
+" Enable autocompletion:
+	set wildmode=longest,list,full
+" Disables automatic commenting on newline:
+	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 autocmd BufWritePost *bspwmrc :silent! !bspc wm -r &
 autocmd BufWritePost *dunstrc :silent! !killall dunst &
