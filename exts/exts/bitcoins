@@ -1,0 +1,2 @@
+#!/bin/sh
+coinmon -t 27 | grep "BTC\|BAT" | awk '{print $4 " " $6" dollars " $8}'

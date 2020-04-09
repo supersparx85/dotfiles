@@ -28,6 +28,7 @@ bspc rule -a Ardour-5.12.0 state=floating state=private
 
 bspc rule -a firefox desktop='^2' follow=on state=private
 bspc rule -a Chromium desktop='^2' follow=on state=private
+bspc rule -a brave-browser desktop='^2' follow=on state=private
 
 bspc rule -a Subl3 desktop='^3' follow=on
 bspc rule -a Gimp desktop='^3' follow=on
@@ -38,6 +39,7 @@ bspc rule -a Anki desktop='^4' follow=on
 
 bspc rule -a Filezilla desktop='^6' follow=on
 bspc rule -a Qbitorrent desktop='^6' follow=on
+bspc rule -a stremio desktop='^6' follow=on
 
 bspc rule -a TelegramDesktop desktop='^7'
 bspc rule -a audacious desktop='^6' follow=on

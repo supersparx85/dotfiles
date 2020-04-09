@@ -36,6 +36,7 @@ syntax on
 map <leader>e :silent! !chmod 777 %<CR>
 map <leader>w :w!<CR>
 map <leader>q :q!<CR>
+map <Leader>n :noh<CR>
 imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
 autocmd BufWritePost *bspwmrc :silent! !bspc wm -r &

@@ -9,6 +9,9 @@ clear_playlist=FALSE
 folders_in_playlist=TRUE
 resume_playback_on_startup=FALSE
 
+[audgui]
+filesel_path=/home/dgu/Documents/Mega/S/secretfiles
+
 [gtkui]
 column_widths=10,275,175,10,175,175,10,100,39,10,275,275,275,10,275
 player_height=503
