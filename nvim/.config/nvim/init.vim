@@ -41,7 +41,7 @@ set tabstop=4
 set termguicolors
 set wildmenu
 set wildmode=longest,list,full
-
+setlocal spell! spelllang=en_us
 hi CursorLineNr ctermfg=Green
 filetype indent on
 syntax on
