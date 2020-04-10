@@ -41,7 +41,8 @@ set tabstop=4
 set termguicolors
 set wildmenu
 set wildmode=longest,list,full
-setlocal spell! spelllang=en_us
+set spell! spelllang=en_us
+
 hi CursorLineNr ctermfg=Green
 filetype indent on
 syntax on
@@ -50,9 +51,12 @@ hi QuickFixLine term=reverse ctermbg=52
 map <leader>e :silent! !chmod 777 %<CR>
 map <leader>w :w!<CR>
 map <leader>q :q!<CR>
+vnoremap <C-c> "*y :let @+=@*<CR>
+map <C-v> "+P
 map <Leader>n :noh<CR>
 imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
+imap ;border -----------------------------------------------------------------------------
 inoremap <F2> <C-X><C-K>
 map <Leader>c 1z=
 map <Leader>o z=

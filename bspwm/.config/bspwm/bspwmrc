@@ -35,7 +35,8 @@ bspc rule -a Gimp desktop='^3' follow=on
 
 bspc rule -a kdenlive desktop='^4' follow=on
 bspc rule -a Olive desktop='^4' follow=on
-bspc rule -a Anki desktop='^4' follow=on
+bspc rule -a anki desktop='^4' follow=on
+
 
 bspc rule -a Filezilla desktop='^6' follow=on
 bspc rule -a Qbitorrent desktop='^6' follow=on

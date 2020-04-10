@@ -106,6 +106,21 @@ d/home/dgu/dotfiles/nvim/.config/nvim
 d/home/dgu/dotfiles/nvim/.config/nvim/spell
 	en.utf-8.add
 1
+d/home/dgu/dotfiles/nvim/.config/nvim
+	spell
+1
+d/home/dgu/dotfiles/nvim/.config
+	nvim
+1
+d/home/dgu/dotfiles/nvim
+	.config
+1
+d/home/dgu/dotfiles
+	nvim
+10
+d/home/dgu
+	cool
+21
 d
 
 # Right window history (oldest to newest):
