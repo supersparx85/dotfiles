@@ -7,7 +7,6 @@ static const unsigned int snap      = 5;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 
-
 static const char *fonts[]          = { "monospace:size=10", "JoyPixels:pixelsize=10:antialias=true:autohint=true"  };
 static const char col_gray1[]       = "#000000"; /* Non-activated bar background */
 static const char col_gray2[]       = "#000000"; /* Non-activated window border */
@@ -33,7 +32,7 @@ static const Rule rules[] = {
 	{ "QBitorrent",		NULL,		NULL,	1 <<  5,	0,	0,		-1 },
 	{ "Subl3",  NULL,       NULL,      		1 << 2,       0,             0,           -1 },
 	{ "kdenlive",	NULL,		NULL,	1 <<  3,	0,		-1 },
-	{ "Pcmanfm",	NULL,		NULL,	1 <<  3,	0,		0 },
+/*	{ "Pcmanfm",	NULL,		NULL,	1 <<  3,	0,		0 }, */
 /*	{ "mpv",	NULL,		NULL,	1 <<  4,	0,		0 }, */
 	{ "TelegramDesktop",	NULL,		NULL,	1 <<  5,	0,		0 },
 };
@@ -61,7 +60,6 @@ static const Layout layouts[] = {
 static const char *dmenu[] = { "dmenu_run", "-i", "-l", "4", NULL};
 static const char *killapp[] = {"xdotool", "getwindowfocus", "windowkill"};
 static const char *pcmanfm[] = {"pcmanfm",NULL};
-static const char *mpctoggle[] = {"mpc","toggle",NULL};
 static const char *telegramapp[] = {"telegram-desktop"};
 
 static Key keys[] = {
@@ -82,7 +80,6 @@ static Key keys[] = {
 	{ ShiftMask,			XK_l,		spawn,	SHCMD("emojis") },
 	{ ShiftMask,			XK_w,		spawn,	SHCMD("wp") },
 
-	{ ShiftMask,			XK_m,		spawn,	SHCMD("audacious --pause") },
 	{ ShiftMask,			XK_p,		spawn,	SHCMD("audacious --play") },
 
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
