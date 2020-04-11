@@ -52,7 +52,7 @@ map <leader>e :silent! !chmod 777 %<CR>
 map <leader>w :w!<CR>
 map <leader>q :q!<CR>
 vnoremap <C-c> "*y :let @+=@*<CR>
-map <C-v> "+P
+map <C-k> "+P
 map <Leader>n :noh<CR>
 imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
