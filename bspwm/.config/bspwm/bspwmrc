@@ -1,5 +1,10 @@
 #!/bin/bash
+
 pgrep xautolock | xautolock -time 5 -locker "amixer set Master mute && slock" &
+pgrep sxhkd | sxhkd &
+pgrep polybar | polybar -r bar &
+
+
 
 bspc rule -r "*"
 bspc monitor -d 1 2 3 4 5 6 7 8 9
@@ -28,7 +33,7 @@ bspc rule -a Ardour-5.12.0 state=floating state=private
 
 bspc rule -a firefox desktop='^2' follow=on state=private
 bspc rule -a Chromium desktop='^2' follow=on state=private
-bspc rule -a brave-browser desktop='^2' follow=on state=private
+bspc rule -a Brave-browser desktop='^2' follow=on state=private
 
 bspc rule -a Subl3 desktop='^3' follow=on
 bspc rule -a Gimp desktop='^3' follow=on
