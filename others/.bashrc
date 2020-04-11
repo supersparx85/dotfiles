@@ -10,7 +10,10 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
-alias ls="ls -a --color=auto --group-directories-first"
+#alias ls="ls -a --color=auto --group-directories-first"
+alias ls="exa --group-directories-first --git-ignore"
+alias la="exa --group-directories-first -a"
+alias ld="exa -D"
 alias grep='grep --color=auto'
 alias h="cdf ~"
 alias mkdir="mkdir -p"
