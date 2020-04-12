@@ -7,10 +7,13 @@ export WALLPAPER="nitrogen"
 export IMAGE="sxiv"
 export VIDEO="mpv"
 export AUDIOC="alsa"
-
+export WM=""
 QT_QPA_PLATFORMTHEME=""
 QT_STYLE_OVERRIDE=""
+
+WM="$(echo -e "bspwm\ndwm\nxfce4" | fzf)"
+
 [ -f /.bashrc ] && source ~/.bashrc
-		if  [ "$(tty)" = "/dev/tty1" ]; then
-				pgrep -x sxhkd || exec startx
+if  [ "$(tty)" = "/dev/tty1" ]; then
+		exec startx
 fi

@@ -10,8 +10,8 @@ numlockx on &
 qjackctl &
 ~/exts/setbg
 megasync &
-bspwm
-#dwmblocks &
-#while :; do
-#	ssh-agent dwm
-#done
+
+dwmblocks &
+
+[ $WM == "bspwm" ] && bspwm
+[ $WM == "dwm" ] && while :; do ssh-agent dwm; done
