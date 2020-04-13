@@ -14,4 +14,5 @@ megasync &
 dwmblocks &
 
 [ $WM == "bspwm" ] && bspwm
+[ $WM == "awesome" ] && awesome
 [ $WM == "dwm" ] && while :; do ssh-agent dwm; done
