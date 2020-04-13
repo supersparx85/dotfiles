@@ -36,6 +36,7 @@ alias pm="sudo pacman -Syu --overwrite='*'"
 alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
 alias j="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;"
 alias bp="ln -s ~/dotfiles/others/.profile ~/.bash_profile"
+alias cleanwps="identify -format "%w:%h:%f\n" * | awk -F : '$1<1920 || $2<1080{print $3}' | xargs -r -I "{}" rm {}"
 function vf(){
 	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/exts/v "{}"
 }
