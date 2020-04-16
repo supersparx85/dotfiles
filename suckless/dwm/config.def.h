@@ -38,7 +38,7 @@ static const Rule rules[] = {
 	{ "kdenlive",	NULL,		NULL,	1 <<  3,	0,		-1 },
 /*	{ "Pcmanfm",	NULL,		NULL,	1 <<  3,	0,		0 }, */
 /*	{ "mpv",	NULL,		NULL,	1 <<  4,	0,		0 }, */
-	{ "TelegramDesktop",	NULL,		NULL,	1 <<  5,	0,		0 },
+	{ "TelegramDesktop",	NULL,		NULL,	1 <<  7,	0,		0 },
 };
 
 /* layout(s) */
@@ -72,6 +72,7 @@ static Key keys[] = {
 	{ MODKEY,		XK_Return, 	spawn, SHCMD("st")},
 	{ MODKEY|ShiftMask,		XK_Return, 	spawn, SHCMD("st -c CenterTerminal") },
 	{ MODKEY|ShiftMask,		XK_n,	   	spawn,	SHCMD("symbols") },
+	{ MODKEY|ShiftMask,		XK_r,	   	spawn,	SHCMD("killdwm") },
 	{ MODKEY|ShiftMask,		XK_w,	   	spawn,	SHCMD("words") },
 	{ MODKEY,			XK_y,	  	spawn,	SHCMD("yt") },
 	{ ShiftMask,  XK_v,		spawn,	{.v = pcmanfm } },
