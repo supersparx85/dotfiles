@@ -9,7 +9,7 @@ export PATH=~/exts:$PATH
 export ZDOTDIR="$HOME/.config/zsh"
 export PATH=~/exts:$PATH
 
-WM="$(echo -e "bspwm\ndwm\nawesome" | fzf)"
+#WM="$(echo -e "bspwm\ndwm\nawesome" | fzf)"
 
 [ -f /.bashrc ] && source ~/.bashrc
 if  [ "$(tty)" = "/dev/tty1" ]; then

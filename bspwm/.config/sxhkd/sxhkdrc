@@ -11,13 +11,13 @@ alt +shift + s
 		flameshot gui
 
 alt + shift {e,w,n}
-		~/exts/{dmn_power,words,symbols} &
+		~/dotfiles/exts/{dmn_power,words,symbols} &
 
 alt + {g,y}
 		~/exts/{class,yt}
 
 shift + {p,w,e}
-		~/exts/{pauseaudio,wp,emojis}
+		~/dotfiles/exts/{pauseaudio,wp,emojis}
 
 shift {u,d,m}
 		amixer set Master {3+,3-,toggle};

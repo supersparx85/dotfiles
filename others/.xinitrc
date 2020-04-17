@@ -8,7 +8,7 @@ setxkbmap -layout br &
 xsetroot -cursor_name arrow &
 numlockx on &
 qjackctl &
-~/exts/setbg
+~/dotfiles/exts/setbg
 megasync &
 sxhkd &
 bspwm
