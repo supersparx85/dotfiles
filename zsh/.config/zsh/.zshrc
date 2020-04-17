@@ -42,9 +42,8 @@ alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
 alias j="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;"
 alias bp="ln -s ~/dotfiles/others/.profile ~/.bash_profile"
 
-
 function vf(){
-	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/exts/v "{}"
+	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/dotfiles/exts/v "{}"
 }
 
 function cdf(){
@@ -66,7 +65,7 @@ function ee(){
 function cleangit(){
 	git checkout --orphan temp_branch;git add -A; git commit -am "history deleted"; git branch -D master; git branch -m master; git push -f origin master
 }
-function createwallpape(){
+function createwallpaper(){
 		convert -size 1920x1080 "xc:#282828" -gravity center -pointsize 93 -weight 700 -fill "#bbbbbb" -annotate 0 "$(echo "Type in the message" | dmenu -p -i -l 5)" ~/.config/wall.jpg && feh --bg-scale ~/.config/wall.jpg
 }
 
@@ -74,4 +73,8 @@ function xephyr(){
 		Xephyr -br -ac -noreset -screen 800x600 :1 >/dev/null 2>&1 &
 		DISPLAY=:1 $1
 
+}
+
+function v(){
+		xdg-open $1	&
 }
