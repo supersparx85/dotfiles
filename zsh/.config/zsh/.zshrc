@@ -12,6 +12,8 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+alias -s jpg=sxiv
+alias -g L="| wc -l"
 
 alias ls="exa --group-directories-first --git-ignore"
 alias la="exa --group-directories-first -a"
