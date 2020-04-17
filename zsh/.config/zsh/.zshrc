@@ -1,16 +1,18 @@
-stty -ixon
-shopt -s autocd
-shopt -s cdspell
-shopt -s checkwinsize
-shopt -s dirspell
-shopt -s expand_aliases
-PS1="\T \[$(tput sgr0)\]\[\033[38;5;10m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]>\[$(tput sgr0)\]"
-force_color_prompt=yes
-HISTCONTROL=ignoreboth
-shopt -s histappend
-HISTSIZE=1000
-HISTFILESIZE=2000
-#alias ls="ls -a --color=auto --group-directories-first"
+autoload -U colors && colors
+PROMPT="%F{34}%~%f> "
+RPROMPT="%*(%?)"
+
+HISTFILE=~/.cache/zsh/history
+HISTSIZE=10000
+SAVEHIST=10000
+
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+
 alias ls="exa --group-directories-first --git-ignore"
 alias la="exa --group-directories-first -a"
 alias ld="exa -D"
@@ -37,6 +39,8 @@ alias pm="sudo pacman -Syu --overwrite='*'"
 alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
 alias j="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;"
 alias bp="ln -s ~/dotfiles/others/.profile ~/.bash_profile"
+
+
 function vf(){
 	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/exts/v "{}"
 }

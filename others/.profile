@@ -8,6 +8,11 @@ export IMAGE="sxiv"
 export VIDEO="mpv"
 export AUDIOC="alsa"
 export WM=""
+
+
+
+
+
 QT_QPA_PLATFORMTHEME=""
 QT_STYLE_OVERRIDE=""
 

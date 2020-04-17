@@ -2,7 +2,7 @@
 
 ## Startup
 pgrep xautolock | xautolock -time 5 -locker "amixer set Master mute && slock" &
-pgrep sxhkd | sxhkd &
+#pgrep sxhkd | sxhkd &
 pgrep polybar | polybar -r bar &
 
 ## Rules
