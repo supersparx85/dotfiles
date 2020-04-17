@@ -69,3 +69,9 @@ function cleangit(){
 function createwallpape(){
 		convert -size 1920x1080 "xc:#282828" -gravity center -pointsize 93 -weight 700 -fill "#bbbbbb" -annotate 0 "$(echo "Type in the message" | dmenu -p -i -l 5)" ~/.config/wall.jpg && feh --bg-scale ~/.config/wall.jpg
 }
+
+xephyr(){
+		Xephyr -br -ac -noreset -screen 800x600 :1 >/dev/null 2>&1 &
+		DISPLAY=:1 $1
+
+}

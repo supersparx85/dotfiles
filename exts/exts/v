@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 [[ "$1" = "" ]] && exit
 case "$1" in
         *.jpg|*.png|*.gif|*.jpeg|*.webp|*.jpeg_large) nohup sxiv -ab "$1" >/dev/null 2>&1 &;;
