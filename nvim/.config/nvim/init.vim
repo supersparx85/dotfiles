@@ -10,6 +10,8 @@ Plug 'ap/vim-css-color'
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'junegunn/goyo.vim'
 Plug 'dracula/vim'
+Plug 'reedes/vim-wordy'
+Plug 'beloglazov/vim-online-thesaurus'
 call plug#end()
 
 color dracula

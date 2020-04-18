@@ -11,6 +11,7 @@ qjackctl &
 ~/dotfiles/exts/setbg
 megasync &
 sxhkd &
+#dwm
 bspwm
 [ $WM == "bspwm" ] && bspwm
 [ $WM == "awesome" ] && awesome

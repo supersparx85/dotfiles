@@ -14,7 +14,7 @@ alt + shift {e,w,n}
 		~/dotfiles/exts/{dmn_power,words,symbols} &
 
 alt + {g,y}
-		~/exts/{class,yt}
+		~/dotfiles/exts/{class,yt}
 
 shift + {p,w,e}
 		~/dotfiles/exts/{pauseaudio,wp,emojis}
