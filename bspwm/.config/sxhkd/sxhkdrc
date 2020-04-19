@@ -4,8 +4,8 @@ alt {_,shift + } Return
 
 alt + o ; {w,p,t,v,a}
 		{brave,pcmanfm ~,telegram-desktop,st -e vifm ~,Waveform11}&
-alt + d
-		dmenu_run -i -l 5
+alt + {d,p}
+		rofi -show {run,window}
 
 alt +shift + s
 		flameshot gui
