@@ -5,7 +5,7 @@ Type| App
 -|-
 💽 | Arch BTW |
 👦 | [Xinitrc](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/others/.xinitrc) & [Zshenv](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/zsh/.zshenv) |
-🖥| Bspwm](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/bspwm/.config/bspwm/bspwmrc)
+🖥|[ Bspwm](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/bspwm/.config/bspwm/bspwmrc)
 ⌨ | [st](https://github.com/TecPr0gr4mm3r/dotfiles/tree/master/suckless/st) |
 🖊 | [nvim](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/init.vim) & [Default](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/Default.vifm)|
 🎉 | [dunst](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/dunst/.config/dunst/dunstrc) |
