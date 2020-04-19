@@ -53,5 +53,5 @@ bspc rule -a stremio desktop='^6' follow=on
 bspc rule -a TelegramDesktop desktop='^7'
 bspc rule -a audacious desktop='^6' follow=on
 
-bspc rule -a Ardour desktop='^8'	follow=on
-bspc rule -a kaveform11 desktop='^8'	follow=on
+bspc rule -a Ardour desktop='^8' follow=on
+bspc rule -a waveform11 desktop='^8' follow=on
