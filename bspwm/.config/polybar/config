@@ -91,7 +91,7 @@ type = internal/alsa
 format-volume = 🔊 <label-volume>
 label-volume = %percentage%
 label-volume-foreground = ${root.foreground}
-format-muted-prefix = 🔇 
+format-muted-prefix = 🔇
 format-muted-foreground = ${root.foreground}
 label-muted = %percentage%%
 

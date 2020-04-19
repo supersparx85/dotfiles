@@ -3,7 +3,7 @@
 ## Startup
 pgrep xautolock | xautolock -time 5 -locker "amixer set Master mute && slock" &
 #pgrep sxhkd | sxhkd &
-pgrep polybar | polybar -r bar &
+#pgrep polybar | polybar -r bar &
 
 ## Rules
 bspc rule -r "*"
@@ -19,11 +19,13 @@ bspc config pointer_action1 move
 bspc config pointer_action2 resize_corner
 bspc config pointer_modifier mod1
 bspc config single_monocle true
-bspc config split_ratio 0.52
-bspc config top_padding 15
+bspc config split_ratio 0.50
+bspc config top_padding 0 #15
 bspc config window_gap 2
 bspc config bottom_padding 0
 bspc config automatic_scheme alternate
+
+bspc subscribe desktop_focus | while read line; do notify-send "Current desktop:$(bspc query -D -d focused --names)"; done &
 
 ## Applications
 bspc rule -a CenterTerminal state=floating
