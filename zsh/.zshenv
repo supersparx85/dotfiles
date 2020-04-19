@@ -9,9 +9,7 @@ export PATH=~/dotfiles/exts:$PATH
 export ZDOTDIR="$HOME/.config/zsh"
 export PATH=~/exts:$PATH
 
-#WM="$(echo -e "bspwm\ndwm\nawesome" | fzf)"
-
-[ -f /.bashrc ] && source ~/.bashrc
+[ -f /.zshenv ] && source ~/.zshenv
 if  [ "$(tty)" = "/dev/tty1" ]; then
-		exec startx
+		pgrep sxhkd | exec startx
 fi

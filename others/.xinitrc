@@ -11,8 +11,4 @@ qjackctl &
 ~/dotfiles/exts/setbg
 megasync &
 sxhkd &
-#dwm
 bspwm
-[ $WM == "bspwm" ] && bspwm
-[ $WM == "awesome" ] && awesome
-[ $WM == "dwm" ] && while :; do ssh-agent dwm; done
