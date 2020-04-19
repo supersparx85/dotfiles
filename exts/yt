@@ -8,6 +8,6 @@ options="$(printf "🎵 Download audio\n📼 Download video\n🖼 Download thumb
 
 [ "$options" =  "📼 Download video" ] &&  notify-send "⬇ Downloading video" &&  youtube-dl -f best -o '$HOME/Downloads/Videos/%(title)s.%(ext)s' "$url" && notify-send "🎵 Song has been Downloaded!"
 
-[ "$options" = "🖼 Download thumbnil"  &&  notify-send "⬇ Downloading thumbnail" && youtube-dl --write-thumbnail --skip-download -o '$HOME/Downloads/Pictures/%(title)s.%(ext)s'} "$url" && notify-send "🖼 Thumbnail has been Downloaded!"
+[ "$options" = "🖼 Download thumbni ] &&  notify-send "⬇ Downloading thumbnail" && youtube-dl --write-thumbnail --skip-download -o '$HOME/Downloads/Pictures/%(title)s.%(ext)s'} "$url" && notify-send "🖼 Thumbnail has been Downloaded!"
 
 [ "$options" = "📹 Open it with mpv" ] && notify-send "📹 Open it with mpv" && mpv "$url" &

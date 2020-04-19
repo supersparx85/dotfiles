@@ -39,5 +39,5 @@ n̩ | n
 ü | uu
 u̇ | uh
 "
-echo "$Symbols" | dmenu -i -l 10 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
+echo "$Symbols" | rofi -dmenu -i -l 10 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
 notify-send "$(xclip -o -selection clipboard) copied to clipboard"

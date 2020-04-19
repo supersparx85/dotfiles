@@ -11,7 +11,7 @@ alt +shift + s
 		flameshot gui
 
 alt + shift {e,w,n}
-		~/dotfiles/exts/{dmn_power,words,symbols} &
+		~/dotfiles/exts/{logout,words,symbols} &
 
 alt + {g,y}
 		~/dotfiles/exts/{class,yt}
