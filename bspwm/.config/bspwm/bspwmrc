@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
 ## Startup
 pgrep xautolock | xautolock -time 5 -locker "amixer set Master mute && slock" &
 #pgrep sxhkd | sxhkd &
-#pgrep polybar | polybar -r bar &
+pgrep polybar | polybar -r bar &
 
 ## Rules
 bspc rule -r "*"
@@ -20,12 +20,12 @@ bspc config pointer_action2 resize_corner
 bspc config pointer_modifier mod1
 bspc config single_monocle true
 bspc config split_ratio 0.50
-bspc config top_padding 0 #15
+bspc config top_padding 0
 bspc config window_gap 2
-bspc config bottom_padding 0
+bspc config bottom_padding 15
 bspc config automatic_scheme alternate
 
-bspc subscribe desktop_focus | while read line; do notify-send "Current desktop:$(bspc query -D -d focused --names)"; done &
+#bspc subscribe desktop_focus | while read line; do notify-send "Current desktop:$(bspc query -D -d focused --names)"; done &
 
 ## Applications
 bspc rule -a CenterTerminal state=floating
@@ -36,7 +36,6 @@ bspc rule -a Leafpad state=floating state=private
 bspc rule -a Ardour-5.12.0 state=floating state=private
 bspc rule -a QjackCtl state=floating
 bspc rule -a Onboard state=floating
-
 bspc rule -a Zathura state=tiled
 
 bspc rule -a firefox desktop='^2' follow=on state=private
@@ -53,9 +52,9 @@ bspc rule -a Anki desktop='^4' follow=on
 bspc rule -a Filezilla desktop='^6' follow=on
 bspc rule -a Qbitorrent desktop='^6' follow=on
 bspc rule -a stremio desktop='^6' follow=on
+bspc rule -a audacious desktop='^6' follow=on
 
 bspc rule -a TelegramDesktop desktop='^7'
-bspc rule -a audacious desktop='^6' follow=on
 
 bspc rule -a Ardour desktop='^8' follow=on
 bspc rule -a waveform11 desktop='^8' follow=on

@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "$(amixer sget Master | grep Mono: | cut -d " " -f6 | tr -d '[]')"
+echo "$(amixer sget Master | awk '/Mono:/ { print $4}' | tr -d '[]')"

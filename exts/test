@@ -1,3 +1,0 @@
-wm="$(echo -e "bspwm\ndwm\nxfce4" | fzf)"
-[ $wm == "bspwm" ] && echo "you chose bspwm"
-[ $wm == "dwm" ] && echo "you chose dwm"

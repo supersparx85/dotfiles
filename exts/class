@@ -1,2 +1,2 @@
 #!/bin/sh
-xprop | grep WM_CLASS | cut -d " " -f3 | tr -d '",' | xclip -selection clipboard
+xprop | awk '/WM_CLASS/ { print $3 }' | tr -d '",' | xclip -selection clipboard

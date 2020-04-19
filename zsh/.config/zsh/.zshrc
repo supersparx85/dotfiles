@@ -41,6 +41,7 @@ alias pm="sudo pacman -Syu --overwrite='*'"
 alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
 alias j="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;"
 alias bp="ln -s ~/dotfiles/others/.profile ~/.bash_profile"
+alias v="nvim "
 
 function vf(){
 	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/dotfiles/exts/v "{}"
