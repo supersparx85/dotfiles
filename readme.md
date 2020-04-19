@@ -1,7 +1,8 @@
 # Minimalist studio Rice
 
 ![](https://wallpapercave.com/wp/lmf9BZk.jpg)
-
+Type| App
+-|-
 💽 | Arch BTW |
 👦 | [Xinitrc](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/.xinitrc) & [bash_profile](https://github.com/TecPr0gr4mm3r/dotfiles/blob/master/files/.profile) |
 🖥| [Dwm](https://github.com/TecPr0gr4mm3r/dotfiles/tree/master/suckless/dwm)
