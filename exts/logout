@@ -1,8 +1,7 @@
 #!/bin/sh
-options="$(printf 'Lockdown\nLogout\nReboot\nPoweroff\nExit' | rofi -dmenu)"
-
-[ "$options" = "Lockdown" ] && amixer set Master mute && slock
-[ "$options" = "Logout" ] && killall xinit
-[ "$options" = "Reboot" ] && systemctl reboot
-[ "$options" = "Poweroff" ] && systemctl poweroff
-[ "$options" = "Exit" ] && exit 0
+options="$(printf '🔒 Lockdown\n🚪 Logout\n💻 Reboot\n 🔌Poweroff\n 🛑 Exit' | rofi -dmenu)"
+[ "$options" = "🔒 Lockdown" ] && amixer set Master mute && slock
+[ "$options" = "🚪 Logout" ] && killall xinit
+[ "$options" = "💻 Reboot" ] && systemctl reboot
+[ "$options" = "🔌 Poweroff" ] && systemctl poweroff
+[ "$options" = "🛑 Exit" ] && exit 0
