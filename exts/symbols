@@ -1,41 +1,32 @@
 #!/bin/sh
-Symbols="
-–  | -
+Symbols="–  | -
 dʒ | dj
 tʃ | ch
 ə  | uh
 ä  | ah
-æ  | aah
 ə̃  | uh~
-ɾ̃  | n
 ȯi | oi
-ē | ee
 ŋ  | ng
 ō  | oh
 au̇ | au
-ȯ  | o
+ô  | o
 ʌ | 'uh
-e  | eh
-i  | ih
+ɪ  | ih
 ā  | ei
 ī  | ai
-ɱ  | mf
-ɸ  | f]
 ɹ  | rr
 ɾ  | dd
 ʃ  | sh
 ʒ  | zh
 ʔ  | glottal ?
 ʰ  | h_
-β  | v]
 ð  | dth
 θ  | th
 —  | --
 →  | ->
-n̩ | n
 ɝ | 'ur
 ɚ | ur
-ɛ̃ | ehn
+ɛ | eh
 ü | uu
 u̇ | uh
 "
