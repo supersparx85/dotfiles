@@ -1,34 +1,29 @@
 #!/bin/sh
 Symbols="–  | -
-dʒ | dj
+—  | --
+→  | ->
 tʃ | ch
 ə  | uh
-ä  | ah
-ə̃  | uh~
+ʌ | 'uh
+ɝ | 'ur
+ē | ee
+ü | uu
+u̇ | uh
 ȯi | oi
 ŋ  | ng
-ō  | oh
+ou  | ou
 au̇ | au
-ô  | o
-ʌ | 'uh
+ô  | aw
 ɪ  | ih
 ā  | ei
 ī  | ai
 ɹ  | rr
-ɾ  | dd
 ʃ  | sh
 ʒ  | zh
 ʔ  | glottal ?
-ʰ  | h_
 ð  | dth
 θ  | th
-—  | --
-→  | ->
-ɝ | 'ur
-ɚ | ur
-ɛ | eh
-ü | uu
-u̇ | uh
 "
 echo "$Symbols" | rofi -dmenu -i -l 10 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
 notify-send "$(xclip -o -selection clipboard) copied to clipboard"
+
