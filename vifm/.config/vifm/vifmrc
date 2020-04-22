@@ -44,7 +44,6 @@ command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
 command! zip zip -r %f.zip %f
 command! run !! ./%f
-command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart
@@ -55,8 +54,8 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
     \phistory,fhistory,dirstack,registers,bookmarks,bmarks
 
 nnoremap q :quit <cr>
+nnoremap i :! sxiv . -t &<cr>
 nnoremap r :rename <cr>
-nnoremap x :!sudo rm *.java; sudo rm *.dll; sudo rm *.txt; sudo rm *.elf; sudo rm *.inf; sudo rm *.ini; sudo rm *.xml; sudo rm *.html;sudo rm *.h & %i <cr>
 nnoremap R :restart <cr>
 nnoremap S :sort<cr>
 nnoremap w :view<cr>

@@ -25,12 +25,6 @@ r2
 d/home/dgu/dotfiles/others
 	..
 0
-d/home/dgu/dotfiles/others
-	.xinitrc
-4
-d/home/dgu/dotfiles/others
-	..
-0
 d/home/dgu
 	1*HXGbRMqyUttLVXH5io_vng.jpeg
 12
@@ -149,8 +143,38 @@ d/home/dgu
 	aaa
 22
 d/home
-	.Trash-0
+	dgu
+2
+d/home/dgu
+	aaa
+18
+d/home/dgu/aaa
+	aaa Edit 1.tracktionedit
 1
+d/home/dgu
+	Documents
+15
+d/home/dgu/Documents
+	Mega
+1
+d/home/dgu/Documents/Mega
+	S
+7
+d/home/dgu/Documents/Mega/S
+	secretfiles
+2
+d/home/dgu/Documents/Mega/S/secretfiles
+	alexandra_daddario
+2
+d/home/dgu/Documents/Mega/S/secretfiles/alexandra_daddario
+	..
+0
+d/home/dgu/Documents/Mega/S/secretfiles
+	alexandra_daddario
+2
+d/home/dgu/Documents/Mega/S/secretfiles/alexandra_daddario
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -161,6 +185,11 @@ D
 
 # Command line history (oldest to newest):
 :only
+:sxiv .
+:!sxiv .
+:! sxiv .
+:! sxiv . -t
+:! sxiv . -t &
 
 # Search history (oldest to newest):
 

@@ -1,8 +1,8 @@
 #!/bin/sh
-alt {_,shift + } Return
-		{xterm,xterm -c CenterTerminal}
 #alt {_,shift + } Return
-#		{st,st -c CenterTerminal}
+#		{xterm,xterm -c CenterTerminal}
+alt {_,shift + } Return
+		{st,st -c CenterTerminal}
 
 alt + o ; {w,p,t,v,a}
 		{brave,pcmanfm ~,telegram-desktop,st -e vifm ~,Waveform11}&
