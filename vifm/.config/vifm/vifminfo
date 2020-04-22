@@ -22,6 +22,15 @@ l2
 r2
 
 # Left window history (oldest to newest):
+d/home/dgu/dotfiles/others
+	..
+0
+d/home/dgu/dotfiles/others
+	.xinitrc
+4
+d/home/dgu/dotfiles/others
+	..
+0
 d/home/dgu
 	1*HXGbRMqyUttLVXH5io_vng.jpeg
 12
@@ -131,8 +140,17 @@ d/home/dgu/Downloads
 	green.mp3
 8
 d/home/dgu
-	Downloads
-13
+	aaa
+22
+d/home/dgu/aaa
+	..
+0
+d/home/dgu
+	aaa
+22
+d/home
+	.Trash-0
+1
 d
 
 # Right window history (oldest to newest):
@@ -142,6 +160,7 @@ D/home/dgu
 D
 
 # Command line history (oldest to newest):
+:only
 
 # Search history (oldest to newest):
 
