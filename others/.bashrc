@@ -38,7 +38,7 @@ alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
 alias j="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;"
 alias bp="ln -s ~/dotfiles/others/.profile ~/.bash_profile"
 function vf(){
-	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/exts/v "{}"
+	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/dotfiles/exts/v "{}"
 }
 
 function cdf(){
