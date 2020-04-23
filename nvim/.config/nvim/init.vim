@@ -1,4 +1,5 @@
 let mapleader="+"
+let g:table_mode_corner='|'
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -12,6 +13,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'dracula/vim'
 Plug 'reedes/vim-wordy'
 Plug 'beloglazov/vim-online-thesaurus'
+Plug 'dhruvasagar/vim-table-mode'
 call plug#end()
 
 color dracula
@@ -50,6 +52,8 @@ filetype indent on
 syntax on
 hi QuickFixLine term=reverse ctermbg=52
 
+
+
 map <leader>e :silent! !chmod 777 %<CR>
 map <leader>w :w!<CR>
 map <leader>q :q!<CR>
@@ -67,7 +71,7 @@ map t :setlocal spell! spelllang=en_us<CR>
 set wildmode=longest,list,full
 " Disables automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
+"Activate table mode with trigger + tm
 autocmd BufWritePost *bspwmrc :silent! !bspc wm -r &
 autocmd BufWritePost *dunstrc :silent! !killall dunst &
 autocmd BufWritePost *sxhkdrc :silent! !pkill -USR1 -x sxhkd &
