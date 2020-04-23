@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1587630134998,
+  "timeStamp": 1587630231247,
   "version": "1.26.2",
   "userSettings": {
     "advancedUserEnabled": true,
@@ -111,16 +111,8 @@
     "updateAssetBypassBrowserCache": false,
     "userResourcesLocation": "unset"
   },
-  "whitelist": [
-    "about-scheme",
-    "chrome-extension-scheme",
-    "chrome-scheme",
-    "moz-extension-scheme",
-    "short88.com",
-    "www.coinbase.com",
-    "www.whitesmoke.com"
-  ],
-  "netWhitelist": "about-scheme\nchrome-extension-scheme\nchrome-scheme\nmoz-extension-scheme\nshort88.com\nwww.coinbase.com\nwww.whitesmoke.com",
+  "whitelist": [],
+  "netWhitelist": "",
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true\nno-strict-blocking: go.redirectingat.com true\nno-strict-blocking: www.letras.mus.br true",
