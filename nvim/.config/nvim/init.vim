@@ -6,14 +6,14 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 call plug#begin('~/.vim/plugged')
-Plug 'triglav/vim-visual-increment'
 Plug 'ap/vim-css-color'
-Plug 'kovetskiy/sxhkd-vim'
-Plug 'junegunn/goyo.vim'
-Plug 'dracula/vim'
-Plug 'reedes/vim-wordy'
 Plug 'beloglazov/vim-online-thesaurus'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'dracula/vim'
+Plug 'junegunn/goyo.vim'
+Plug 'kovetskiy/sxhkd-vim'
+Plug 'reedes/vim-wordy'
+Plug 'triglav/vim-visual-increment'
 call plug#end()
 
 color dracula
@@ -39,43 +39,41 @@ set relativenumber
 set showmatch
 set sidescroll=1
 set softtabstop=4
+set spell! spelllang=en_us
 set splitbelow splitright
 set synmaxcol=500
 set tabstop=4
 set termguicolors
 set wildmenu
 set wildmode=longest,list,full
-set spell! spelllang=en_us
 
-hi CursorLineNr ctermfg=Green
+"Activate table mode with trigger + tm
+
 filetype indent on
-syntax on
+hi CursorLineNr ctermfg=Green
 hi QuickFixLine term=reverse ctermbg=52
+syntax on
 
-
-
-map <leader>e :silent! !chmod 777 %<CR>
-map <leader>w :w!<CR>
-map <leader>q :q!<CR>
-vnoremap <C-c> "*y :let @+=@*<CR>
-map <C-k> "+P
-map <Leader>n :noh<CR>
 imap ;null >/dev/null 2>&1
 imap ;ssh #!/bin/sh
-imap ;border -----------------------------------------------------------------------------
+imap <leader>b -----------------------------------------------------------------------------
 inoremap <F2> <C-X><C-K>
+map <C-k> "+P
 map <Leader>c 1z=
+map <Leader>n :noh<CR>
 map <Leader>o z=
+map <leader>e :silent! !chmod 777 %<CR>
+map <leader>q :q!<CR>
+map <leader>w :w!<CR>
 map t :setlocal spell! spelllang=en_us<CR>
-" Enable autocompletion:
-set wildmode=longest,list,full
-" Disables automatic commenting on newline:
+vnoremap <C-c> "*y :let @+=@*<CR>
+
+
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-"Activate table mode with trigger + tm
+autocmd BufWritePost *.Xresources,*Xdefaults !xrdb ~/.Xresources
 autocmd BufWritePost *bspwmrc :silent! !bspc wm -r &
 autocmd BufWritePost *dunstrc :silent! !killall dunst &
-autocmd BufWritePost *sxhkdrc :silent! !pkill -USR1 -x sxhkd &
 autocmd BufWritePost *en.utf-8.add :mkspell! %
-autocmd BufWritePost *.Xresources,*Xdefaults !xrdb ~/.Xresources
+autocmd BufWritePost *sxhkdrc :silent! !pkill -USR1 -x sxhkd &
 autocmd BufWritePre * $put _ | $;?\(^\s*$\)\@!?+1,$d
 autocmd BufWritePre * :silent! %s/\s\+$//e
