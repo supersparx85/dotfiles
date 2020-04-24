@@ -7,12 +7,10 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 call plug#begin('~/.vim/plugged')
 Plug 'ap/vim-css-color'
-Plug 'beloglazov/vim-online-thesaurus'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'dracula/vim'
 Plug 'junegunn/goyo.vim'
 Plug 'kovetskiy/sxhkd-vim'
-Plug 'reedes/vim-wordy'
 Plug 'triglav/vim-visual-increment'
 call plug#end()
 

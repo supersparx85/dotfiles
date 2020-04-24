@@ -21,7 +21,6 @@ alias ld="exa -D"
 alias grep='grep --color=auto'
 alias h="cdf ~"
 alias mkdir="mkdir -p"
-alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts'
 alias sdl="shred -vfzu -n 24"
 alias sl="ls"
 alias psm="sudo ps_mem"
@@ -41,7 +40,6 @@ alias pm="sudo pacman -Syu --overwrite='*'"
 alias unlockupdates="sudo rm -r /var/lib/pacman/db.lck"
 alias j="sudo rm config.h; rm *.orig; rm *.rej; sudo make clean; sudo make clean install;"
 alias bp="ln -s ~/dotfiles/others/.profile ~/.bash_profile"
-alias v="nvim "
 
 function vf(){
 	fd --type f . '/home/dgu' | fzf | xargs -r -I {} ~/dotfiles/exts/v "{}"
@@ -53,7 +51,6 @@ function cdf(){
 
 function cleanlinks(){
 		find . -type l -xtype l | xargs -r -I {} rm "{}"
-
 }
 
 function ees(){
@@ -70,7 +67,6 @@ function cleangit(){
 function createwallpaper(){
 		convert -size 1920x1080 "xc:#282828" -gravity center -pointsize 93 -weight 700 -fill "#bbbbbb" -annotate 0 "$(echo "Type in the message" | dmenu -p -i -l 5)" ~/.config/wall.jpg && feh --bg-scale ~/.config/wall.jpg
 }
-
 
 function v(){
 		~/dotfiles/exts/v $1 &
