@@ -18,8 +18,10 @@ alt + shift {e,w,n}
 alt + {g,y}
 		~/dotfiles/exts/{class,yt}
 
-shift + {p,w,e}
-		~/dotfiles/exts/{pauseaudio,wp,emojis}
+shift + e
+		rofi -show emoji
+shift + {p,w}
+		~/dotfiles/exts/{pauseaudio,wp}
 
 shift {u,d,m}
 		amixer set Master {3+,3-,toggle};
