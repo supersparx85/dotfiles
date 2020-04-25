@@ -9,5 +9,8 @@ sudo make clean >/dev/null 2>&1
 #sudo make clean >/dev/null 2>&1
 #cd ~/dotfiles/audacious/.config/audacious/ || exit
 #sudo rm -r lyrics playlists >/dev/null 2>&1
+cd ~/dotfiles/vifm/.config/vifm || exit
+sudo rm -r vifminfo vifm-help.txt scripts
+rm ~/dotfiles/nvim/.config/nvim/.netrwhist
 cd ~/dotfiles/
 git status .

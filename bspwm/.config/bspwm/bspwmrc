@@ -52,7 +52,7 @@ bspc rule -a Anki desktop='^4' follow=on
 bspc rule -a Filezilla desktop='^6' follow=on
 bspc rule -a Qbitorrent desktop='^6' follow=on
 bspc rule -a stremio desktop='^6' follow=on
-bspc rule -a audacious desktop='^6' follow=on
+bspc rule -a Audacious desktop='^6' follow=on
 bspc rule -a Joplin desktop='^6' follow=on
 
 bspc rule -a TelegramDesktop desktop='^7'

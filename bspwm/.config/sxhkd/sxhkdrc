@@ -13,7 +13,7 @@ alt +shift + s
 		flameshot gui
 
 alt + shift {e,w,n}
-		~/dotfiles/exts/{logout,words,symbols} &
+		~/dotfiles/exts/{logout,words} &
 
 alt + {g,y}
 		~/dotfiles/exts/{class,yt}
