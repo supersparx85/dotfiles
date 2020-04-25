@@ -1,5 +1,0 @@
-#!/bin/sh
-dwmblocks &
-while :; do
-	ssh-agent dwm
-done

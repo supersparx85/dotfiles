@@ -1,2 +1,2 @@
 #!/bin/sh
-find ~/Documents/Mega/W/wallpapers/ | shuf | sxiv -t -
+find ~/Documents/Mega/w/wallpapers/ | shuf | sxiv -t -
