@@ -27,7 +27,14 @@ bspc config automatic_scheme alternate
 
 #bspc subscribe desktop_focus | while read line; do notify-send "Current desktop:$(bspc query -D -d focused --names)"; done &
 
+
+xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-0)
+xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-1)
+xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI-A-0)
+
 ## Applications
+
+# Floating
 bspc rule -a CenterTerminal state=floating
 bspc rule -a Lxappearance state=floating
 bspc rule -a Galculator state=floating
@@ -38,24 +45,33 @@ bspc rule -a QjackCtl state=floating
 bspc rule -a Onboard state=floating
 bspc rule -a Zathura state=tiled
 
+# terminal
+bspc rule -a Subl3 desktop='^1' follow=on
+
+# Browser
 bspc rule -a firefox desktop='^2' follow=on state=private
 bspc rule -a Chromium desktop='^2' follow=on state=private
 bspc rule -a Brave-browser desktop='^2' follow=on state=private
 
-bspc rule -a Subl3 desktop='^3' follow=on
-bspc rule -a Gimp desktop='^3' follow=on
+# image
+bspc rule -a Gimp desktop='^4' follow=on
 
-bspc rule -a kdenlive desktop='^4' follow=on
-bspc rule -a Olive desktop='^4' follow=on
-bspc rule -a Anki desktop='^4' follow=on
+# video
+bspc rule -a kdenlive desktop='^5' follow=on
+bspc rule -a Olive desktop='^5' follow=on
 
-bspc rule -a Filezilla desktop='^6' follow=on
-bspc rule -a Qbitorrent desktop='^6' follow=on
+#entertainment
 bspc rule -a stremio desktop='^6' follow=on
 bspc rule -a Audacious desktop='^6' follow=on
-bspc rule -a Joplin desktop='^6' follow=on
 
-bspc rule -a TelegramDesktop desktop='^7'
+#Internet
+bspc rule -a Filezilla desktop='^7' follow=on
+bspc rule -a Qbitorrent desktop='^7' follow=on
+bspc rule -a Anki desktop='^7' follow=on
 
+#Audio studio
 bspc rule -a Ardour desktop='^8' follow=on
 bspc rule -a waveform11 desktop='^8' follow=on
+
+#Chats
+bspc rule -a TelegramDesktop desktop='^9'
