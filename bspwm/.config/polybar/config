@@ -87,9 +87,8 @@ interval=30m
 
 [module/packages]
 type=custom/script
-exec=echo "📦 $(checkupdates | wc -l)"
+exec=echo " $(checkupdates | wc -l)"
 interval=30m
-
 
 [module/logout]
 type=custom/script
