@@ -6,9 +6,12 @@ alt {_,shift + } Return
 
 alt + o ; {w,p,t,v,a}
 		{brave,pcmanfm ~,telegram-desktop,st -e vifm ~,Waveform11}&
-alt + {d,p}
-		rofi -show {run,window}
 
+alt + {d,r,p}
+		rofi -show {drun,run,window} -show-icons
+
+alt + n
+		rofisearcher
 alt +shift + s
 		flameshot gui
 
