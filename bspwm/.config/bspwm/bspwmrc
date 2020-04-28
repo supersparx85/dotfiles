@@ -45,6 +45,7 @@ bspc rule -a Ardour-5.12.0 state=floating state=private
 bspc rule -a QjackCtl state=floating
 bspc rule -a Onboard state=floating
 bspc rule -a Zathura state=tiled
+bspc rule -a Hydrogen state=floating desktop='^8'
 
 # terminal
 bspc rule -a Subl3 desktop='^1' follow=on
@@ -72,7 +73,7 @@ bspc rule -a Qbitorrent desktop='^7' follow=on
 bspc rule -a Anki desktop='^7' follow=on
 
 #Audio studio
-bspc rule -a Ardour desktop='^8' follow=on
+bspc rule -a Ardour desktop='^9' follow=on
 bspc rule -a waveform11 desktop='^8' follow=on
 
 #Chats
