@@ -90,6 +90,12 @@ type=custom/script
 exec=echo " $(checkupdates | wc -l)"
 interval=30m
 
+
+[module/menu]
+type=custom/script
+exec=echo ""
+click-left = jgmenu
+
 [module/logout]
 type=custom/script
 exec=echo ""

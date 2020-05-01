@@ -37,6 +37,7 @@ bspc config urgent_border_color "#dd2727"
 
 # Floating
 bspc rule -a CenterTerminal state=floating
+bspc rule -a st state=floating
 bspc rule -a Lxappearance state=floating
 bspc rule -a Galculator state=floating
 bspc rule -a MEGAsync state=floating
@@ -45,7 +46,6 @@ bspc rule -a Ardour-5.12.0 state=floating state=private
 bspc rule -a QjackCtl state=floating
 bspc rule -a Onboard state=floating
 bspc rule -a Zathura state=tiled
-bspc rule -a Hydrogen state=floating desktop='^8'
 
 # terminal
 bspc rule -a Subl3 desktop='^1' follow=on
@@ -54,7 +54,7 @@ bspc rule -a Subl3 desktop='^1' follow=on
 bspc rule -a firefox desktop='^2' follow=on state=private
 bspc rule -a Chromium desktop='^2' follow=on state=private
 bspc rule -a Brave-browser desktop='^2' follow=on state=private
-bspc rule -a google-chrome desktop='^2' follow=on state=private
+bspc rule -a Google-chrome desktop='^2' follow=on state=private
 
 # image
 bspc rule -a Gimp desktop='^4' follow=on
@@ -71,10 +71,9 @@ bspc rule -a Audacious desktop='^6' follow=on
 bspc rule -a Filezilla desktop='^7' follow=on
 bspc rule -a Qbitorrent desktop='^7' follow=on
 bspc rule -a Anki desktop='^7' follow=on
+bspc rule -a TelegramDesktop desktop='^7'
 
 #Audio studio
+bspc rule -a Hydrogen desktop='^8' follow=on
 bspc rule -a Ardour desktop='^9' follow=on
-bspc rule -a waveform11 desktop='^8' follow=on
-
-#Chats
-bspc rule -a TelegramDesktop desktop='^9'
+bspc rule -a waveform11 desktop='^9' follow=on

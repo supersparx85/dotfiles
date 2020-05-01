@@ -9,6 +9,8 @@ xsetroot -cursor_name arrow &
 numlockx on &
 qjackctl &
 ~/dotfiles/exts/setbg
+
 megasync &
+
 sxhkd &
 bspwm
