@@ -1,2 +1,2 @@
 #!/bin/sh
-fd --type f . '/home/dgu' | rofi -i -dmenu | xargs -r -I {} ~/dotfiles/exts/v "{}"
+fd --type f . '/home/dgu' | rofi -i -dmenu | xargs -r -I {} xdg-open "{}"
