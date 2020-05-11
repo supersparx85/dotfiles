@@ -234,6 +234,11 @@ globalkeys = gears.table.join(
 
 awful.key({modkey, "Shift"},"o", function () awful.util.spawn("pcmanfm ~") end, {description = "run rofi", group = "launcher"}),
 awful.key({modkey},"d", function () awful.util.spawn("rofi -show drun") end, {description = "run rofi", group = "launcher"}),
+awful.key({"Shift"},"u", function () awful.util.spawn("amixer set Master 3+") end, {description = "Turn up volume", group = "sounds"}),
+awful.key({"Shift"},"d", function () awful.util.spawn("amixer set Master 3-") end, {description = "Turn down volume", group = "sounds"}),
+awful.key({"Shift"},"m", function () awful.util.spawn("amixer set Master toggle") end, {description = "Turn up/off volume", group = "sounds"}),
+
+
     awful.key({ modkey,           }, "j",
         function ()
             awful.client.focus.byidx( 1)
