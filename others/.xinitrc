@@ -1,6 +1,5 @@
 #!/bin/sh
 source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
-source /etc/X11/xinit/xinitrc.d/80-appmenu-gtk-module
 source /etc/X11/xinit/xinitrc.d/40-libcanberra-gtk-module.sh
 xrdb -merge $HOME/.Xresources
 xmodmap $HOME/.Xmodmap
@@ -10,5 +9,10 @@ numlockx on &
 qjackctl &
 ~/dotfiles/exts/setbg
 megasync &
-sxhkd &
-bspwm
+#sxhkd &
+#bspwm
+
+#while :; do
+#	ssh-agent dwm
+#done
+awesome
